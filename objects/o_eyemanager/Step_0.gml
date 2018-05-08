@@ -3,6 +3,12 @@
 // Debugmode
 if (keyboard_check_pressed(vk_tab)) {debugmode = !debugmode};
 
+// Fullscreen
+if (keyboard_check_pressed(ord("F"))) {
+	if(!window_get_fullscreen()) window_set_fullscreen(true);
+	else window_set_fullscreen(false);
+}
+
 // Axis variables
 lhaxis = gamepad_axis_value(0,gp_axislh);
 lvaxis = gamepad_axis_value(0,gp_axislv);

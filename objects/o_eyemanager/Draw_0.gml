@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Main Draw
 
 // General
 draw_set_font(f_main);

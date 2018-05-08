@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description 
 
 // DEBUG Setup
 debugmode = false;
@@ -61,6 +61,6 @@ sGlobalTime = shader_get_uniform(shadertouse,"iGlobalTime");
 sTime = shader_get_uniform(shadertouse,"iTime");
 sRes = shader_get_uniform(shadertouse,"iResolution");
 
-eyesurf = surface_create(room_width,room_height);
+eyesurf = surface_create(view_wport[0],view_hport[0]);
 application_surface_draw_enable(0);
 

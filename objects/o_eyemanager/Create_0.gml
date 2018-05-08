@@ -1,8 +1,5 @@
 /// @description 
 
-// DEBUG Setup
-debugmode = false;
-
 // Screen setup
 screenw = window_get_width();
 screenh = window_get_height();

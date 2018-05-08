@@ -1,17 +1,5 @@
 /// @description Main Controls
 
-// Debugmode
-if (keyboard_check_pressed(vk_tab)) {debugmode = !debugmode};
-
-// Fullscreen
-if (keyboard_check_pressed(ord("F"))) {
-	if(!window_get_fullscreen()) {
-		window_set_fullscreen(true);
-	} else {
-		window_set_fullscreen(false);
-	}
-}
-
 // Screen vars
 screenw = window_get_width();
 screenh = window_get_height();
@@ -74,17 +62,21 @@ if (gamepad_button_check_pressed(0,gp_start)) {
 }
 
 // Mood Change
-if (gamepad_button_check_pressed(0, gp_padd)) {
+if (!global.showmenu) {
+	if (gamepad_button_check_pressed(0, gp_padd)) {
+		global.eyemood = 0;
+	}
+	if (gamepad_button_check_pressed(0, gp_padu)) {
+		global.eyemood = 1;
+	}
+	if (gamepad_button_check_pressed(0, gp_padl)) {
+		global.eyemood = 2;
+	}
+	if (gamepad_button_check_pressed(0, gp_padr)) {
+		global.eyemood = 3;
+	}
+} else {
 	global.eyemood = 0;
-}
-if (gamepad_button_check_pressed(0, gp_padu)) {
-	global.eyemood = 1;
-}
-if (gamepad_button_check_pressed(0, gp_padl)) {
-	global.eyemood = 2;
-}
-if (gamepad_button_check_pressed(0, gp_padr)) {
-	global.eyemood = 3;
 }
 #endregion
 

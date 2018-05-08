@@ -11,7 +11,7 @@ surface_set_target(eyesurf);
 draw_clear_alpha(c_black,0);
 draw_set_color(c_white);
 
-// Draw Eye
+#region Draw Eye
 // LEFT EYE
 //draw_circle(leye_x,leye_y,eyesize,false);
 draw_ellipse(leye_x-leyesize , leye_y-(leyesize*(lblink)) , leye_x+leyesize , leye_y+(leyesize*(lblink)) , false)
@@ -25,7 +25,8 @@ gpu_set_blendmode(bm_subtract);
 if (global.eyemood == 0) {
 
 };
-	
+
+#region Eye Moods
 // Happy Eyes
 if (global.eyemood == 1) {eyemoodfact = lerp(eyemoodfact,0,smooth)} else {eyemoodfact = lerp(eyemoodfact,3,smooth)};
 	// LEFT EYE
@@ -51,7 +52,8 @@ if (global.eyemood == 3) {eyemoodfact3 = lerp(eyemoodfact3,1,smooth)} else {eyem
 		
 	// Right Eye
 	draw_triangle((reye_x+eyesize*3),((reye_y-eyesize+20)+30*(abs(lvaxis))+(eyesize*(1-rblink))),(reye_x-eyesize),(reye_y-2*eyesize),(reye_x-eyesize*3),((reye_y)+30*(abs(lvaxis))+30)*eyemoodfact3,false);
-	
+#endregion
+
 // Clean Eyes if not shown
 if(!global.eyedraw) {draw_clear_alpha(c_black,0);}
 
@@ -62,17 +64,50 @@ draw_surface(eyesurf,0,0);
 
 draw_set_color(c_white);
 
-// Face buttons emotes
+#endregion
+
+#region Face buttons emotes
 if (global.emoteeye != 0) {
 	moodsmooth = lerp(moodsmooth,1,eyesmooth);
+} else {
+	moodsmooth = lerp(moodsmooth,0,eyesmooth);
+}
+
+if (global.emoteeye == 1) {
+	
 }
 
 if (global.emoteeye == 2) {
 	// Draw "?"
 	draw_sprite_ext(s_what,0,room_width/2,room_height/2,(room_width/(sprite_get_width(s_what))),(room_width/(sprite_get_width(s_what)))*moodsmooth,40*((1-cosfactor)*2),c_white,1);
-} else if (global.emoteeye == 4) {
+} 
+
+if (global.emoteeye == 3) {
+	z += 0.02; //the speed in which the flame moves around
+	var _cn = 0;
+	for (var ci = 0; ci <= 2*pi; ci += pi/(cn/2)) {
+		cx = (room_width/2)+d*cos((z*pi)+ci); //x position
+		cy = (room_height/2)+d*(moodsmooth*sin((z*pi)+ci)); //y position
+		
+		draw_set_alpha(1 - _cn);
+		draw_circle(cx,cy,(eyesize/2)*moodsmooth,false);
+		
+		_cn += 1/cn;
+
+	}
+	draw_set_alpha(1)
+
+	
+} else {
+	z = 0;
+}
+
+if (global.emoteeye == 4) {
 	// Draw "idea"
 	draw_sprite_ext(s_bulb,0,room_width/2,room_height/2,cosfactor,cosfactor*moodsmooth,0,c_white,1);
 }
+
+
+#endregion
 
 

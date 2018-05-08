@@ -1,6 +1,6 @@
 /// @description Insert description here
 // Debugmode
-if (keyboard_check_pressed(vk_tab)) {debugmode = !debugmode};
+if (keyboard_check_pressed(vk_tab)) {global.debugmode = !global.debugmode};
 
 if (keyboard_check_pressed(vk_space) or (gamepad_button_check_pressed(0,gp_select))) {global.showmenu = !global.showmenu};
 
@@ -26,12 +26,44 @@ if (global.showmenu) {
 	if (keyboard_check_pressed(vk_down) or (gamepad_button_check_pressed(0,gp_padd))) {select--}
 	select = clamp(select,0,array_length_1d(options)-1);
 	
-	if (keyboard_check_pressed(vk_enter) or (gamepad_button_check_pressed(0,gp_padr))) {
-		switch (select) {
-			case 0:
-			global.showmenu = !global.showmenu;
-			break
+	switch (select) {
+		case 0:
+			optiontext = "";
+			if (keyboard_check_pressed(vk_enter) or (gamepad_button_check_pressed(0,gp_padr))) {
+				global.showmenu = !global.showmenu;
+			}
+		break;
+		
+		case 1:
+			optiontext = window_get_fullscreen();
+			if (keyboard_check_pressed(vk_enter) or (gamepad_button_check_pressed(0,gp_padr))) {
+					if(!window_get_fullscreen()) {
+						window_set_fullscreen(true);
+					} else {
+						window_set_fullscreen(false);
+					}
+			}
+		break;
+		
+		case 2:
+			optiontext = string(global.emoteeye);
+			if (gamepad_button_check_pressed(0,gp_padr)) {
+				global.emoteeye++;
+			}
+			if (gamepad_button_check_pressed(0,gp_padl)) {
+				global.emoteeye--;
+			}
+			global.emoteeye = clamp(global.emoteeye,0,4);
+		break;
+		
+		case 3:
+			optiontext = string(global.bgindex);
+			if (gamepad_button_check_pressed(0,gp_padr)) {
+				global.bgindex++;
+			}
+			if (gamepad_button_check_pressed(0,gp_padl)) {
+				global.bgindex--;
+			}
 		}
-	}
 	
 }

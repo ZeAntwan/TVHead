@@ -1,5 +1,7 @@
 /// @description 
 
+chars_drawn = 0;
+
 // Screen setup
 screenw = window_get_width();
 screenh = window_get_height();
@@ -19,6 +21,9 @@ eyesize = room_width*(8/100);
 leyesize = eyesize;
 reyesize = eyesize;
 eyeradius = (room_width/4) - (eyesize);
+
+// Eye Skins
+global.eyeskin = 0;
 
 // Eye Mood
 global.emoteeye = 0;
@@ -47,6 +52,7 @@ reye_dy = room_height/2;
 reye_x = reye_dx;
 reye_y = reye_dy;
 
+forceblink = false;
 rblink = 0;
 lblink = 0;
 
@@ -66,3 +72,15 @@ sRes = shader_get_uniform(shadertouse,"iResolution");
 eyesurf = surface_create(view_wport[0],view_hport[0]);
 application_surface_draw_enable(0);
 
+/// Eye Emotes and Mood settings
+
+// Loading
+d = room_height/3; //diameter in pixels of the circle
+cn = 10;
+
+// Code Text
+linecount = 0;
+file = file_text_open_read(working_directory + "\code.txt")
+codetext = file_text_read_string(file);
+//codetext = "Test#2ndeligne";
+file_text_close(file)

@@ -37,7 +37,7 @@ if (global.controlmode == 1) {
 
 // Blink
 	
-if (gamepad_button_check(0,gp_shoulderr)) {
+if (gamepad_button_check(0,gp_shoulderr) or forceblink) {
 	rblink = lerp(rblink,0,0.7);
 	lblink = lerp(lblink,0,0.7);
 } else {
@@ -46,7 +46,7 @@ if (gamepad_button_check(0,gp_shoulderr)) {
 }
 
 // Woot eyes
-if (gamepad_button_check(0, gp_shoulderl)) {
+if (gamepad_button_check(0, gp_stickr)) {
 	global.emoteeye = 0;
 	leyesize = lerp(leyesize,(cosfactor2*eyesize),smooth);
 	reyesize = lerp(reyesize,((1/cosfactor2)*eyesize),smooth);
@@ -55,6 +55,10 @@ if (gamepad_button_check(0, gp_shoulderl)) {
 	reyesize = lerp(reyesize,eyesize,smooth);
 }
 
+// Right axis Eyesize
+leyesize = lerp(leyesize,eyesize-(rvaxis*(eyesize/2)),smooth);
+reyesize = lerp(reyesize,eyesize-(rvaxis*(eyesize/2)),smooth);
+
 // Control mode change 
 if (gamepad_button_check_pressed(0,gp_start)) {
 	if (global.controlmode == 0) {global.controlmode = 1}
@@ -62,33 +66,55 @@ if (gamepad_button_check_pressed(0,gp_start)) {
 }
 
 // Mood Change
-if (!global.showmenu) {
+if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {
+	// Down
 	if (gamepad_button_check_pressed(0, gp_padd)) {
-		global.eyemood = 0;
+		if(global.eyemood == 1) {global.eyemood = 0} else {global.eyemood = 1};
+	}
+
+	// Up
+	if (gamepad_button_check_pressed(0, gp_padu)) {
+		if(global.eyemood == 2) {global.eyemood = 0} else {global.eyemood = 2};
+	}
+
+	// Left
+	if (gamepad_button_check_pressed(0, gp_padl)) {
+		if(global.eyemood == 3) {global.eyemood = 0} else {global.eyemood = 3};
+	}
+
+	// Right
+	if (gamepad_button_check_pressed(0, gp_padr)) {
+		if(global.eyemood == 4) {global.eyemood = 0} else {global.eyemood = 4};
+	}
+}
+
+// Secondary Controls (LB + Dpad)
+if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
+	if (gamepad_button_check_pressed(0, gp_padd)) {
+		
 	}
 	if (gamepad_button_check_pressed(0, gp_padu)) {
-		global.eyemood = 1;
+		
 	}
 	if (gamepad_button_check_pressed(0, gp_padl)) {
-		global.eyemood = 2;
+		global.bgindex--;
 	}
 	if (gamepad_button_check_pressed(0, gp_padr)) {
-		global.eyemood = 3;
+		global.bgindex++;
 	}
-} else {
+}
+if (global.showmenu) {
 	global.eyemood = 0;
 }
 #endregion
 
 #region Eye Emotes
-// Smooth effet
+// Reset Smooth effet
 if (gamepad_button_check_pressed(0, gp_face1) 
 	or gamepad_button_check_pressed(0, gp_face2) 
 	or gamepad_button_check_pressed(0, gp_face3) 
 	or gamepad_button_check_pressed(0, gp_face4)) 
 	{moodsmooth = 0};
-
-
 
 // Eyes Emote
 
@@ -102,12 +128,12 @@ if (gamepad_button_check_pressed(0, gp_face2)) {
 	if(global.emoteeye == 2) {global.emoteeye = 0} else {global.emoteeye = 2};
 }
 
-// X Idea
+// X "Code"
 if (gamepad_button_check_pressed(0, gp_face3)) {
 	if(global.emoteeye == 3) {global.emoteeye = 0} else {global.emoteeye = 3};
 }
 
-// Y Idea
+// Y "Ideo"
 if (gamepad_button_check_pressed(0, gp_face4)) {
 	if(global.emoteeye == 4) {global.emoteeye = 0} else {global.emoteeye = 4};
 }
@@ -115,8 +141,10 @@ if (gamepad_button_check_pressed(0, gp_face4)) {
 
 // Draw eyes only if not in emote
 if (global.emoteeye == 0) {
-	global.eyedraw = true;
+	forceblink = false;
+	//global.eyedraw = true;
 } else {
-	global.eyedraw = false;
+	forceblink = true;
+	//global.eyedraw = false;
 }
 #endregion

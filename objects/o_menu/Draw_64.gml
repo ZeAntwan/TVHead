@@ -12,12 +12,25 @@ if (global.showmenu) {
 	
 	for (var i = 0; i < array_length_1d(options); i += 1) 
 	{
-		draw_set_color(c_white);
 		if (select == i) {
 			draw_rectangle(-2,(screenh-40)-(40*i),60+string_width(options[i]),(screenh-40)-(40*i)+35,false);
 			draw_set_color(c_black)
+			draw_text(50,(screenh-40)-(40*i), string(options[i]));
+			
+			// Show different options
+			if (select != 0) {
+			
+				if (optiontext != "") {
+					draw_rectangle(60+string_width(options[i]),(screenh-40)-(40*i),80+string_width(options[i])+string_width(optiontext),(screenh-40)-(40*i)+35,false);
+					draw_set_color(c_white);
+					draw_text(70+string_width(options[i]),(screenh-40)-(40*i), string(optiontext));
+				}
+			}
+			
+		} else {
+			draw_set_color(c_white);
+			draw_text(50,(screenh-40)-(40*i), string(options[i]));
 		}
-		draw_text(50,(screenh-40)-(40*i), string(options[i]));
 	}
 }
 

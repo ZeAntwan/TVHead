@@ -52,6 +52,7 @@ reye_dy = room_height/2;
 reye_x = reye_dx;
 reye_y = reye_dy;
 
+blink = false;
 forceblink = false;
 rblink = 0;
 lblink = 0;

@@ -4,7 +4,7 @@ usesprite = sprite_array[global.bgindex];
 
 // Mood Change
 if (global.eyemood == 3) {
-	tint_color = c_red
+	tint_color = merge_color(tint_color,c_red,0.2)
 } else {
-	tint_color = lerp(tint_color,base_color,0.2)
+	tint_color = merge_color(tint_color,base_color,0.2)
 }

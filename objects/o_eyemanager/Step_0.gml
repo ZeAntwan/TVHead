@@ -37,7 +37,7 @@ if (global.controlmode == 1) {
 
 // Blink
 	
-if (gamepad_button_check(0,gp_shoulderr) or forceblink) {
+if (gamepad_button_check(0,gp_shoulderr) or forceblink or blink) {
 	rblink = lerp(rblink,0,0.7);
 	lblink = lerp(lblink,0,0.7);
 } else {
@@ -88,21 +88,6 @@ if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {
 	}
 }
 
-// Secondary Controls (LB + Dpad)
-if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
-	if (gamepad_button_check_pressed(0, gp_padd)) {
-		
-	}
-	if (gamepad_button_check_pressed(0, gp_padu)) {
-		
-	}
-	if (gamepad_button_check_pressed(0, gp_padl)) {
-		global.bgindex--;
-	}
-	if (gamepad_button_check_pressed(0, gp_padr)) {
-		global.bgindex++;
-	}
-}
 if (global.showmenu) {
 	global.eyemood = 0;
 }
@@ -117,34 +102,63 @@ if (gamepad_button_check_pressed(0, gp_face1)
 	{moodsmooth = 0};
 
 // Eyes Emote
+if (!gamepad_button_check(0,gp_shoulderl)) {
+	// A 
+	if (gamepad_button_check_pressed(0, gp_face1)) {
+		if(global.emoteeye == 1) {global.emoteeye = 0} else {global.emoteeye = 1};
+	}
 
-// A 
-if (gamepad_button_check_pressed(0, gp_face1)) {
-	if(global.emoteeye == 1) {global.emoteeye = 0} else {global.emoteeye = 1};
+	// B "?"
+	if (gamepad_button_check_pressed(0, gp_face2)) {
+		if(global.emoteeye == 2) {global.emoteeye = 0} else {global.emoteeye = 2};
+	}
+
+	// X "Code"
+	if (gamepad_button_check_pressed(0, gp_face3)) {
+		if(global.emoteeye == 3) {global.emoteeye = 0} else {global.emoteeye = 3};
+	}
+
+	// Y "Ideo"
+	if (gamepad_button_check_pressed(0, gp_face4)) {
+		if(global.emoteeye == 4) {global.emoteeye = 0} else {global.emoteeye = 4};
+	}
 }
-
-// B "?"
-if (gamepad_button_check_pressed(0, gp_face2)) {
-	if(global.emoteeye == 2) {global.emoteeye = 0} else {global.emoteeye = 2};
-}
-
-// X "Code"
-if (gamepad_button_check_pressed(0, gp_face3)) {
-	if(global.emoteeye == 3) {global.emoteeye = 0} else {global.emoteeye = 3};
-}
-
-// Y "Ideo"
-if (gamepad_button_check_pressed(0, gp_face4)) {
-	if(global.emoteeye == 4) {global.emoteeye = 0} else {global.emoteeye = 4};
-}
-
 
 // Draw eyes only if not in emote
 if (global.emoteeye == 0) {
-	forceblink = false;
+	blink = false;
 	//global.eyedraw = true;
 } else {
-	forceblink = true;
+	blink = true;
 	//global.eyedraw = false;
 }
+
+// Secondary Controls (LB + Dpad)
+if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
+	if (gamepad_button_check_pressed(0, gp_padd)) {
+		
+	}
+	if (gamepad_button_check_pressed(0, gp_padu)) {
+		
+	}
+	if (gamepad_button_check_pressed(0, gp_padl)) {
+		global.bgindex--;
+	}
+	if (gamepad_button_check_pressed(0, gp_padr)) {
+		global.bgindex++;
+	}
+	
+	if (gamepad_button_check_pressed(0, gp_padr)) {
+		global.bgindex++;
+	}
+	
+	// Toggle Blink
+	if (gamepad_button_check_pressed(0, gp_shoulderr)) {
+		forceblink = !forceblink;
+	}
+	
+	// Link Eye Blinking
+	lblink = rblink;
+}
+
 #endregion

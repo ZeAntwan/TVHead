@@ -3,6 +3,10 @@
 // DEBUG Setup
 debugmode = false;
 
+// Screen setup
+screenw = window_get_width();
+screenh = window_get_height();
+
 // Controler setup
 if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.1);
 
@@ -33,6 +37,7 @@ eyemoodfact3 = 0;
 smooth = 0.3;
 eyesmooth = 0.5;
 costime = 0;
+moodsmooth = 0;
 
 // Default position
 leye_dx = room_width/4;

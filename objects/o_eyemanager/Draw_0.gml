@@ -62,16 +62,17 @@ draw_surface(eyesurf,0,0);
 
 draw_set_color(c_white);
 
-switch(global.emoteeye) {
-	case 1:
+// Face buttons emotes
+if (global.emoteeye != 0) {
+	moodsmooth = lerp(moodsmooth,1,eyesmooth);
+}
+
+if (global.emoteeye == 2) {
 	// Draw "?"
-	draw_sprite_ext(s_what,0,room_width/2,room_height/2,(room_width/(sprite_get_width(s_what))),(room_width/(sprite_get_width(s_what))),40*((1-cosfactor)*2),c_white,1);
-	break;
-	
-	case 2:
+	draw_sprite_ext(s_what,0,room_width/2,room_height/2,(room_width/(sprite_get_width(s_what))),(room_width/(sprite_get_width(s_what)))*moodsmooth,40*((1-cosfactor)*2),c_white,1);
+} else if (global.emoteeye == 4) {
 	// Draw "idea"
-	draw_sprite_ext(s_bulb,0,room_width/2,room_height/2,cosfactor,cosfactor,0,c_white,1);
-	break;
+	draw_sprite_ext(s_bulb,0,room_width/2,room_height/2,cosfactor,cosfactor*moodsmooth,0,c_white,1);
 }
 
 

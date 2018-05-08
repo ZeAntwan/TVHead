@@ -5,9 +5,16 @@ if (keyboard_check_pressed(vk_tab)) {debugmode = !debugmode};
 
 // Fullscreen
 if (keyboard_check_pressed(ord("F"))) {
-	if(!window_get_fullscreen()) window_set_fullscreen(true);
-	else window_set_fullscreen(false);
+	if(!window_get_fullscreen()) {
+		window_set_fullscreen(true);
+	} else {
+		window_set_fullscreen(false);
+	}
 }
+
+// Screen vars
+screenw = window_get_width();
+screenh = window_get_height();
 
 // Axis variables
 lhaxis = gamepad_axis_value(0,gp_axislh);
@@ -50,6 +57,16 @@ if (gamepad_button_check(0,gp_shoulderr)) {
 	lblink = lerp(lblink,(1-ltaxis),0.7);
 }
 
+// Woot eyes
+if (gamepad_button_check(0, gp_shoulderl)) {
+	global.emoteeye = 0;
+	leyesize = lerp(leyesize,(cosfactor2*eyesize),smooth);
+	reyesize = lerp(reyesize,((1/cosfactor2)*eyesize),smooth);
+} else {
+	leyesize = lerp(leyesize,eyesize,smooth);
+	reyesize = lerp(reyesize,eyesize,smooth);
+}
+
 // Control mode change 
 if (gamepad_button_check_pressed(0,gp_start)) {
 	if (global.controlmode == 0) {global.controlmode = 1}
@@ -72,25 +89,24 @@ if (gamepad_button_check_pressed(0, gp_padr)) {
 #endregion
 
 #region Eye Emotes
-// Woot eyes
-if (gamepad_button_check(0, gp_face1)) {
-	global.emoteeye = 0;
-	leyesize = lerp(leyesize,(cosfactor2*eyesize),smooth);
-	reyesize = lerp(reyesize,((1/cosfactor2)*eyesize),smooth);
-} else {
-	leyesize = lerp(leyesize,eyesize,smooth);
-	reyesize = lerp(reyesize,eyesize,smooth);
-}
+// Smooth effet
+if (gamepad_button_check_pressed(0, gp_face1) 
+	or gamepad_button_check_pressed(0, gp_face2) 
+	or gamepad_button_check_pressed(0, gp_face3) 
+	or gamepad_button_check_pressed(0, gp_face4)) 
+	{moodsmooth = 0};
 
-// No eyes emotions
 
-// B "?"
-if (gamepad_button_check_pressed(0, gp_face2)) {
+
+// Eyes Emote
+
+// A 
+if (gamepad_button_check_pressed(0, gp_face1)) {
 	if(global.emoteeye == 1) {global.emoteeye = 0} else {global.emoteeye = 1};
 }
 
-// Y Idea
-if (gamepad_button_check_pressed(0, gp_face4)) {
+// B "?"
+if (gamepad_button_check_pressed(0, gp_face2)) {
 	if(global.emoteeye == 2) {global.emoteeye = 0} else {global.emoteeye = 2};
 }
 
@@ -99,6 +115,13 @@ if (gamepad_button_check_pressed(0, gp_face3)) {
 	if(global.emoteeye == 3) {global.emoteeye = 0} else {global.emoteeye = 3};
 }
 
+// Y Idea
+if (gamepad_button_check_pressed(0, gp_face4)) {
+	if(global.emoteeye == 4) {global.emoteeye = 0} else {global.emoteeye = 4};
+}
+
+
+// Draw eyes only if not in emote
 if (global.emoteeye == 0) {
 	global.eyedraw = true;
 } else {

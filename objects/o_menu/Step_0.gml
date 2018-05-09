@@ -57,6 +57,16 @@ if (global.showmenu) {
 		break;
 		
 		case 3:
+			optiontext = string(global.eyeskin);
+			if (gamepad_button_check_pressed(0,gp_padr)) {
+				global.eyeskin++;
+			}
+			if (gamepad_button_check_pressed(0,gp_padl)) {
+				global.eyeskin--;
+			}
+		break;
+		
+		case 4:
 			optiontext = string(sprite_get_name(o_bgmanager.sprite_array[global.bgindex]));
 			if (gamepad_button_check_pressed(0,gp_padr)) {
 				global.bgindex++;
@@ -66,7 +76,7 @@ if (global.showmenu) {
 			}
 		break;
 		
-		case 4:
+		case 5:
 			optiontext = string(audio_get_name(o_musicmanager.musiclist[global.musicselect]));
 			if (gamepad_button_check_pressed(0,gp_padr)) {
 				global.musicselect++;
@@ -76,7 +86,7 @@ if (global.showmenu) {
 			}
 		break;
 		
-		case 5:
+		case 6:
 			optiontext = string(global.forcemusic);
 			if (gamepad_button_check_pressed(0,gp_padr)) {
 				global.forcemusic = true;

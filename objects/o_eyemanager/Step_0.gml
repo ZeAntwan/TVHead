@@ -128,12 +128,12 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 	// Secondary Mode
 	// A "Music mode"
 	if (gamepad_button_check_pressed(0, gp_face1)) {
-		if(global.emoteeye == 5) {global.emoteeye = 0; global.music = false} else {global.emoteeye = 5; global.music = true};
+		if(global.emoteeye == 5) {global.emoteeye = 0} else {global.emoteeye = 5};
 	}
 
 	// B "?"
 	if (gamepad_button_check_pressed(0, gp_face2)) {
-		if(global.emoteeye == 6) {global.emoteeye = 0} else {global.emoteeye = 6};
+		if(global.emoteeye == 6) {global.emoteeye = 0; global.music = false} else {global.emoteeye = 6; global.music = true};
 	}
 
 	// X "Code"
@@ -145,6 +145,14 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 	if (gamepad_button_check_pressed(0, gp_face4)) {
 		if(global.emoteeye == 8) {global.emoteeye = 0} else {global.emoteeye = 8};
 	}
+	
+	// Toggle Blink
+	if (gamepad_button_check_pressed(0, gp_shoulderr)) {
+		forceblink = !forceblink;
+	}
+	
+	// Link Eye Blinking
+	lblink = rblink;
 }
 
 // Draw eyes only if not in emote
@@ -175,13 +183,6 @@ if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
 		global.bgindex++;
 	}
 	
-	// Toggle Blink
-	if (gamepad_button_check_pressed(0, gp_shoulderr)) {
-		forceblink = !forceblink;
-	}
-	
-	// Link Eye Blinking
-	lblink = rblink;
 }
 
 #endregion

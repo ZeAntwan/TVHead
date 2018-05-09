@@ -2,6 +2,7 @@
 global.music = false;
 
 musiclist = [
+mus_none,
 mus_wii,
 mus_ctr
 ]

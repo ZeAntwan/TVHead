@@ -69,7 +69,7 @@ if (global.emoteeye != 0) {
 }
 
 if (global.emoteeye == 1) {
-	
+
 }
 
 if (global.emoteeye == 2) {
@@ -103,24 +103,36 @@ if (global.emoteeye == 4) {
 	draw_sprite_ext(s_bulb,0,room_width/2,room_height/2,cosfactor,cosfactor*moodsmooth,0,c_white,1);
 }
 
-// Tape 
+// Sleep
 if (global.emoteeye == 5) {
+	leye_x = lerp(leye_x, leye_dx, eyesmooth);
+	leye_y = lerp(leye_y, leye_dy + 2*eyeradius,eyesmooth);
+	
+	reye_x = lerp(reye_x, reye_dx, eyesmooth);
+	reye_y = lerp(reye_y, reye_dy + 2*eyeradius,eyesmooth);
+	
+	rblink = lerp(rblink,0.4,1);
+	lblink = lerp(lblink,0.4,1);
+}
+
+// Tape 
+if (global.emoteeye == 6) {
 	taperot+=1.5
 	taped = 1.5*eyesize;
 	tapew = taped-20;
 	
-	draw_ellipse(leye_dx-taped,leye_dy-taped,leye_dx+taped,leye_dy+taped,false);
-	draw_ellipse(reye_dx-taped,reye_dy-taped,reye_dx+taped,reye_dy+taped,false);
+	draw_ellipse(leye_x-taped,leye_y-taped,leye_x+taped,leye_y+taped,false);
+	draw_ellipse(reye_x-taped,reye_y-taped,reye_x+taped,reye_y+taped,false);
 	
-	draw_rectangle(leye_dx+2, leye_dy+tapew,reye_dx-2,reye_dy+taped,false);
+	draw_rectangle(leye_x+2, leye_y+tapew,reye_x-2,reye_y+taped,false);
 	
 	gpu_set_blendmode(bm_subtract);
-	draw_ellipse(leye_dx-tapew,leye_dy-tapew,leye_dx+tapew,leye_dy+tapew,false);
-	draw_ellipse(reye_dx-tapew,reye_dy-tapew,reye_dx+tapew,reye_dy+tapew,false);
+	draw_ellipse(leye_x-tapew,leye_y-tapew,leye_x+tapew,leye_y+tapew,false);
+	draw_ellipse(reye_x-tapew,reye_y-tapew,reye_x+tapew,reye_y+tapew,false);
 	
 	gpu_set_blendmode(bm_normal);
-	draw_sprite_ext(s_k7roll,0,(room_width/4),room_height/2,1,moodsmooth,taperot,c_white,1);
-	draw_sprite_ext(s_k7roll,0,room_width-(room_width/4),room_height/2,1,moodsmooth,taperot,c_white,1);
+	draw_sprite_ext(s_k7roll,0,leye_x,leye_y,1,moodsmooth,taperot,c_white,1);
+	draw_sprite_ext(s_k7roll,0,reye_x,reye_y,1,moodsmooth,taperot,c_white,1);
 } else {
 	taperot = 0;
 }

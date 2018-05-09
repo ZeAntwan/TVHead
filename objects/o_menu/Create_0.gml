@@ -12,8 +12,10 @@ select = 0;
 options = [
 "Close Menu", // 0
 "Fullscreen", //1
-"Set Mood", // 2
-"Background" // 3
+"Set Emote", // 2
+"Background", // 3
+"Music", // 4
+"Force Play Music", // 5
 ];
 
 optiontext = "";

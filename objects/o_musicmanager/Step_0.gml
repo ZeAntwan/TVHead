@@ -1,0 +1,18 @@
+/// @description Insert description here
+
+global.musicselect = clamp(global.musicselect,0,array_length_1d(musiclist)-1);
+
+
+
+if (global.music) {
+	if (!audio_is_playing(musiclist[global.musicselect])) {
+		if (audio_is_playing(playmusic)) {
+			audio_stop_sound(playmusic)
+		}
+		playmusic = musiclist[global.musicselect];
+		
+		audio_play_sound(playmusic,10,true);
+	}
+} else {
+	if(global.forcemusic) {global.music = true} else {audio_stop_all()}
+}

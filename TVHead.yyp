@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "177a249b-831e-4243-bff6-0d89f8b65951",
+            "Value": {
+                "id": "955df6d7-7780-4a46-a9f9-579941d04812",
+                "resourcePath": "objects\\o_musicmanager\\o_musicmanager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "380ad38a-fd15-4928-a30c-0ce06c98d59b",
             "Value": {
                 "id": "f793185a-8b03-49e4-9dc2-f74a7ba7f8af",
@@ -100,6 +108,14 @@
                 "id": "9d6d0595-5a6f-494c-ba1d-4ec2efd8cb26",
                 "resourcePath": "views\\4e251475-853f-448c-aca4-c565de8e754d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4ffb49a4-b2e9-4dd9-b7b9-e629639b18bf",
+            "Value": {
+                "id": "6e9b52d9-a7ad-4bf4-9712-e46881465406",
+                "resourcePath": "sprites\\s_k7tape\\s_k7tape.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -135,6 +151,14 @@
             }
         },
         {
+            "Key": "837026ff-1bca-40db-b262-d1b21c729d6f",
+            "Value": {
+                "id": "4030d1d4-40cf-43d8-a6e6-ad4eb8a97670",
+                "resourcePath": "sounds\\mus_ctr\\mus_ctr.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8387c9d3-a47e-4902-bbe4-d2251979380f",
             "Value": {
                 "id": "0e8c07e0-fe3d-4a4b-81a3-9e6269922cca",
@@ -156,6 +180,22 @@
                 "id": "0a008243-6d16-448b-ad90-7167016d5483",
                 "resourcePath": "views\\86188b60-d36a-4be8-87b3-909d6dc06c32.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8975c30c-83df-4f45-84d5-ed517b4f58e2",
+            "Value": {
+                "id": "eb12aebf-d272-4f54-8e7e-af044c5ce0d3",
+                "resourcePath": "sprites\\s_k7roll\\s_k7roll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8cba7bf1-2aa2-4704-bc0a-1ee98382842a",
+            "Value": {
+                "id": "da926b59-bc81-4110-9f34-3cd467e2c7a2",
+                "resourcePath": "objects\\o_skinmanager\\o_skinmanager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -340,6 +380,14 @@
                 "id": "c2f19db2-a0c3-4b14-b01b-b5a90359d8bf",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fb6e964f-675c-4ddc-8f1a-24b5e2d46c00",
+            "Value": {
+                "id": "f43103e1-6d54-44f1-bd4b-2a19bf7ac587",
+                "resourcePath": "sounds\\mus_wii\\mus_wii.yy",
+                "resourceType": "GMSound"
             }
         }
     ],

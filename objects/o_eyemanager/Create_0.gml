@@ -22,9 +22,6 @@ leyesize = eyesize;
 reyesize = eyesize;
 eyeradius = (room_width/4) - (eyesize);
 
-// Eye Skins
-global.eyeskin = 0;
-
 // Eye Mood
 global.emoteeye = 0;
 global.eyemood = 0;
@@ -60,7 +57,7 @@ lblink = 0;
 // Set precision and AA
 gpu_set_texfilter(true);
 
-display_reset(8,true);
+display_reset(6,true);
 draw_set_circle_precision(128);
 
 // Surface and Shaders

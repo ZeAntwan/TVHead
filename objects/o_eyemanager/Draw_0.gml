@@ -57,12 +57,7 @@ if (global.eyemood == 3) {eyemoodfact3 = lerp(eyemoodfact3,1,smooth)} else {eyem
 // Clean Eyes if not shown
 if(!global.eyedraw) {draw_clear_alpha(c_black,0);}
 
-
 gpu_set_blendmode(bm_normal);
-surface_reset_target();
-draw_surface(eyesurf,0,0);
-
-draw_set_color(c_white);
 
 #endregion
 
@@ -83,7 +78,8 @@ if (global.emoteeye == 2) {
 } 
 
 if (global.emoteeye == 3) {
-	z += 0.02; //the speed in which the flame moves around
+	// Loader
+	z += 0.02; // Circle Speed
 	var _cn = 0;
 	for (var ci = 0; ci <= 2*pi; ci += pi/(cn/2)) {
 		cx = (room_width/2)+d*cos((z*pi)+ci); //x position
@@ -92,7 +88,7 @@ if (global.emoteeye == 3) {
 		draw_set_alpha(1 - _cn);
 		draw_circle(cx,cy,(eyesize/2)*moodsmooth,false);
 		
-		_cn += 1/cn;
+		_cn += 1/(cn+5);
 
 	}
 	draw_set_alpha(1)
@@ -107,7 +103,27 @@ if (global.emoteeye == 4) {
 	draw_sprite_ext(s_bulb,0,room_width/2,room_height/2,cosfactor,cosfactor*moodsmooth,0,c_white,1);
 }
 
+// Tape 
+if (global.emoteeye == 5) {
+	taperot+=1.5
+	taped = 1.5*eyesize;
+	tapew = taped-20;
+	
+	draw_ellipse(leye_dx-taped,leye_dy-taped,leye_dx+taped,leye_dy+taped,false);
+	draw_ellipse(reye_dx-taped,reye_dy-taped,reye_dx+taped,reye_dy+taped,false);
+	
+	draw_rectangle(leye_dx+2, leye_dy+tapew,reye_dx-2,reye_dy+taped,false);
+	
+	gpu_set_blendmode(bm_subtract);
+	draw_ellipse(leye_dx-tapew,leye_dy-tapew,leye_dx+tapew,leye_dy+tapew,false);
+	draw_ellipse(reye_dx-tapew,reye_dy-tapew,reye_dx+tapew,reye_dy+tapew,false);
+	
+	gpu_set_blendmode(bm_normal);
+	draw_sprite_ext(s_k7roll,0,(room_width/4),room_height/2,1,moodsmooth,taperot,c_white,1);
+	draw_sprite_ext(s_k7roll,0,room_width-(room_width/4),room_height/2,1,moodsmooth,taperot,c_white,1);
+} else {
+	taperot = 0;
+}
+
 
 #endregion
-
-

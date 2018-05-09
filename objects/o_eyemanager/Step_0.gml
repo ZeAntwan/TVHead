@@ -103,6 +103,8 @@ if (gamepad_button_check_pressed(0, gp_face1)
 
 // Eyes Emote
 if (!gamepad_button_check(0,gp_shoulderl)) {
+	// Normal Mode
+	
 	// A 
 	if (gamepad_button_check_pressed(0, gp_face1)) {
 		if(global.emoteeye == 1) {global.emoteeye = 0} else {global.emoteeye = 1};
@@ -113,14 +115,35 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 		if(global.emoteeye == 2) {global.emoteeye = 0} else {global.emoteeye = 2};
 	}
 
-	// X "Code"
+	// X "Loader"
 	if (gamepad_button_check_pressed(0, gp_face3)) {
 		if(global.emoteeye == 3) {global.emoteeye = 0} else {global.emoteeye = 3};
 	}
 
-	// Y "Ideo"
+	// Y "Idea"
 	if (gamepad_button_check_pressed(0, gp_face4)) {
 		if(global.emoteeye == 4) {global.emoteeye = 0} else {global.emoteeye = 4};
+	}
+} else {
+	// Secondary Mode
+	// A "Music mode"
+	if (gamepad_button_check_pressed(0, gp_face1)) {
+		if(global.emoteeye == 5) {global.emoteeye = 0; global.music = false} else {global.emoteeye = 5; global.music = true};
+	}
+
+	// B "?"
+	if (gamepad_button_check_pressed(0, gp_face2)) {
+		if(global.emoteeye == 6) {global.emoteeye = 0} else {global.emoteeye = 6};
+	}
+
+	// X "Code"
+	if (gamepad_button_check_pressed(0, gp_face3)) {
+		if(global.emoteeye == 7) {global.emoteeye = 0} else {global.emoteeye = 7};
+	}
+
+	// Y "Ideo"
+	if (gamepad_button_check_pressed(0, gp_face4)) {
+		if(global.emoteeye == 8) {global.emoteeye = 0} else {global.emoteeye = 8};
 	}
 }
 

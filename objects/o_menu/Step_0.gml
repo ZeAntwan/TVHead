@@ -53,17 +53,38 @@ if (global.showmenu) {
 			if (gamepad_button_check_pressed(0,gp_padl)) {
 				global.emoteeye--;
 			}
-			global.emoteeye = clamp(global.emoteeye,0,4);
+			global.emoteeye = clamp(global.emoteeye,0,8);
 		break;
 		
 		case 3:
-			optiontext = string(global.bgindex);
+			optiontext = string(sprite_get_name(o_bgmanager.sprite_array[global.bgindex]));
 			if (gamepad_button_check_pressed(0,gp_padr)) {
 				global.bgindex++;
 			}
 			if (gamepad_button_check_pressed(0,gp_padl)) {
 				global.bgindex--;
 			}
+		break;
+		
+		case 4:
+			optiontext = string(audio_get_name(o_musicmanager.musiclist[global.musicselect]));
+			if (gamepad_button_check_pressed(0,gp_padr)) {
+				global.musicselect++;
+			}
+			if (gamepad_button_check_pressed(0,gp_padl)) {
+				global.musicselect--;
+			}
+		break;
+		
+		case 5:
+			optiontext = string(global.forcemusic);
+			if (gamepad_button_check_pressed(0,gp_padr)) {
+				global.forcemusic = true;
+			}
+			if (gamepad_button_check_pressed(0,gp_padl)) {
+				global.forcemusic = false;
+			}
+		break;
 		}
 	
 }

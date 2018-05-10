@@ -1,7 +1,7 @@
 /// @description Var Setup
 
-// Eye Skins
-global.eyeskin = 0;
+//// Eye Skins
+//global.eyeskin = 0;
 
 skinlist = [
 noone,

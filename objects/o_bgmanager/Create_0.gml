@@ -1,12 +1,16 @@
 /// @description Insert description here
 
-global.bgindex = 0;
-sprite_array = [
+bg_array = [
 sprite_index,
-bg_2
+bg_vid,
+bg_laia,
+bg_neon
 ];
 
 _img = 0;
 
 base_color = c_white
 tint_color = base_color;
+target_color = base_color;
+
+bganim = false;

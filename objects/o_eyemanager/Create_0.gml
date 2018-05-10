@@ -1,10 +1,4 @@
-/// @description 
-
-chars_drawn = 0;
-
-// Screen setup
-screenw = window_get_width();
-screenh = window_get_height();
+/// @description Setup
 
 // Controler setup
 if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.1);
@@ -22,9 +16,9 @@ leyesize = eyesize;
 reyesize = eyesize;
 eyeradius = (room_width/4) - (eyesize);
 
-// Eye Mood
-global.emoteeye = 0;
-global.eyemood = 0;
+//// Eye Mood
+//global.emoteeye = 0;
+//global.eyemood = 0;
 
 eyemoodmod = 25;
 
@@ -54,21 +48,7 @@ forceblink = false;
 rblink = 0;
 lblink = 0;
 
-// Set precision and AA
-gpu_set_texfilter(true);
-
-display_reset(6,true);
-draw_set_circle_precision(128);
-
-// Surface and Shaders
-shadertouse = myShader
-
-sGlobalTime = shader_get_uniform(shadertouse,"iGlobalTime");
-sTime = shader_get_uniform(shadertouse,"iTime");
-sRes = shader_get_uniform(shadertouse,"iResolution");
-
-eyesurf = surface_create(view_wport[0],view_hport[0]);
-application_surface_draw_enable(0);
+eyesurf = surface_create(room_width,room_height);
 
 /// Eye Emotes and Mood settings
 
@@ -82,3 +62,6 @@ file = file_text_open_read(working_directory + "\code.txt")
 codetext = file_text_read_string(file);
 //codetext = "Test#2ndeligne";
 file_text_close(file)
+
+// BRB Audio (and SFX global ?)
+sfxplayed = false;

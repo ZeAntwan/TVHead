@@ -1,9 +1,5 @@
 /// @description Main Controls
 
-// Screen vars
-screenw = window_get_width();
-screenh = window_get_height();
-
 // Axis variables
 lhaxis = gamepad_axis_value(0,gp_axislh);
 lvaxis = gamepad_axis_value(0,gp_axislv);
@@ -64,6 +60,7 @@ if (gamepad_button_check_pressed(0,gp_start)) {
 	if (global.controlmode == 0) {global.controlmode = 1}
 	else {global.controlmode = 0}
 }
+#endregion
 
 // Mood Change
 if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {
@@ -75,11 +72,13 @@ if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {
 	// Up
 	if (gamepad_button_check_pressed(0, gp_padu)) {
 		if(global.eyemood == 2) {global.eyemood = 0} else {global.eyemood = 2};
+		if (instance_exists(o_bgmanager)) {o_bgmanager.target_color = c_red};
 	}
 
-	// Left
+	// Left (Angry)
 	if (gamepad_button_check_pressed(0, gp_padl)) {
 		if(global.eyemood == 3) {global.eyemood = 0} else {global.eyemood = 3};
+		if (instance_exists(o_bgmanager)) {o_bgmanager.target_color = c_red};
 	}
 
 	// Right
@@ -91,7 +90,7 @@ if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {
 if (global.showmenu) {
 	global.eyemood = 0;
 }
-#endregion
+
 
 #region Eye Emotes
 // Reset Smooth effet
@@ -138,7 +137,15 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 
 	// X "Code"
 	if (gamepad_button_check_pressed(0, gp_face3)) {
-		if(global.emoteeye == 7) {global.emoteeye = 0} else {global.emoteeye = 7};
+		if(global.emoteeye == 7) {global.emoteeye = 0} else {
+			global.emoteeye = 7
+			global.forcemusicstop = true;
+			if (!audio_is_playing(sfx_brb) and !sfxplayed) {
+				audio_play_sound(sfx_brb,15,false);
+			} else {
+				sfxplayed = true;
+			}	
+		};
 	}
 
 	// Y "Ideo"
@@ -155,7 +162,7 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 	lblink = rblink;
 }
 
-// Draw eyes only if not in emote
+// Draw eyes only if not in emote and var reset
 if (global.emoteeye == 0) {
 	blink = false;
 	//global.eyedraw = true;
@@ -175,10 +182,6 @@ if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
 	if (gamepad_button_check_pressed(0, gp_padl)) {
 		global.bgindex--;
 	}
-	if (gamepad_button_check_pressed(0, gp_padr)) {
-		global.bgindex++;
-	}
-	
 	if (gamepad_button_check_pressed(0, gp_padr)) {
 		global.bgindex++;
 	}

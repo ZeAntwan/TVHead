@@ -54,6 +54,7 @@ if (global.eyemood == 3) {eyemoodfact3 = lerp(eyemoodfact3,1,smooth)} else {eyem
 	draw_triangle((reye_x+eyesize*3),((reye_y-eyesize+20)+30*(abs(lvaxis))+(eyesize*(1-rblink))),(reye_x-eyesize),(reye_y-2*eyesize),(reye_x-eyesize*3),((reye_y)+30*(abs(lvaxis))+30)*eyemoodfact3,false);
 #endregion
 
+
 // Clean Eyes if not shown
 if(!global.eyedraw) {draw_clear_alpha(c_black,0);}
 
@@ -135,6 +136,20 @@ if (global.emoteeye == 6) {
 	draw_sprite_ext(s_k7roll,0,reye_x,reye_y,1,moodsmooth,taperot,c_white,1);
 } else {
 	taperot = 0;
+}
+
+if (global.emoteeye == 7) {
+	draw_set_font(f_mainlarge);
+	draw_set_valign(fa_center);
+	draw_set_alpha(.7);
+	draw_set_color(c_black);
+	for (var si = 15; si > 0; si--) {
+		draw_text_ext(((room_width/2)-170)+si,(room_height/2)+si,"We'll\nBe\nRight\nBack.",120,1000);	
+	}
+	draw_set_alpha(1);
+	draw_set_color(c_white);
+	draw_text_ext((room_width/2)-170,room_height/2,"We'll\nBe\nRight\nBack.",120,1000);
+	draw_set_valign(fa_top);	
 }
 
 

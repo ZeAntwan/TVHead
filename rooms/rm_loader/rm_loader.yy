@@ -7,8 +7,7 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "65210015-b0a5-4e3c-b25d-15d861eac29c",
-        "a8f47724-45fa-4389-8681-4179dba0923f"
+        "65210015-b0a5-4e3c-b25d-15d861eac29c"
     ],
     "IsDnD": false,
     "layers": [
@@ -26,8 +25,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_70124A21","id": "65210015-b0a5-4e3c-b25d-15d861eac29c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_70124A21","objId": "bfbdfdfb-c5d4-41f2-ac7b-15c80ca9c22e","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 64,"y": 96},
-{"name": "inst_77D044DB","id": "a8f47724-45fa-4389-8681-4179dba0923f","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_77D044DB","objId": "0d3c9440-8641-4f7a-91b2-97c7e120a1de","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 64,"y": 128}
+{"name": "inst_70124A21","id": "65210015-b0a5-4e3c-b25d-15d861eac29c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_70124A21","objId": "bfbdfdfb-c5d4-41f2-ac7b-15c80ca9c22e","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 64,"y": 96}
             ],
             "layers": [
 
@@ -45,7 +43,7 @@
             "id": "37c304bb-43b8-444f-9bea-60acee11a88f",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4280295424 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,

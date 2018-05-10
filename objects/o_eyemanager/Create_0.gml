@@ -25,6 +25,7 @@ eyemoodmod = 25;
 eyemoodfact = 0;
 eyemoodfact2 = 0;
 eyemoodfact3 = 0;
+eyemoodfact4 = 0;
 
 // Smooth
 smooth = 0.3;

@@ -63,25 +63,24 @@ if (gamepad_button_check_pressed(0,gp_start)) {
 #endregion
 
 // Mood Change
+// Reset Target color
 if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {
-	// Down
-	if (gamepad_button_check_pressed(0, gp_padd)) {
+	// Up (Happy)
+	if (gamepad_button_check_pressed(0, gp_padu)) {
 		if(global.eyemood == 1) {global.eyemood = 0} else {global.eyemood = 1};
 	}
 
-	// Up
-	if (gamepad_button_check_pressed(0, gp_padu)) {
+	// Down (Not impressed)
+	if (gamepad_button_check_pressed(0, gp_padd)) {
 		if(global.eyemood == 2) {global.eyemood = 0} else {global.eyemood = 2};
-		if (instance_exists(o_bgmanager)) {o_bgmanager.target_color = c_red};
 	}
 
 	// Left (Angry)
 	if (gamepad_button_check_pressed(0, gp_padl)) {
 		if(global.eyemood == 3) {global.eyemood = 0} else {global.eyemood = 3};
-		if (instance_exists(o_bgmanager)) {o_bgmanager.target_color = c_red};
 	}
 
-	// Right
+	// Right (Sad)
 	if (gamepad_button_check_pressed(0, gp_padr)) {
 		if(global.eyemood == 4) {global.eyemood = 0} else {global.eyemood = 4};
 	}
@@ -139,15 +138,15 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 	if (gamepad_button_check_pressed(0, gp_face3)) {
 		if(global.emoteeye == 7) {global.emoteeye = 0} else {
 			global.emoteeye = 7
-			global.forcemusicstop = true;
+			// SFX
+			global.musicstop = true;
 			if (!audio_is_playing(sfx_brb) and !sfxplayed) {
 				audio_play_sound(sfx_brb,15,false);
-			} else {
 				sfxplayed = true;
-			}	
+			};
 		};
 	}
-
+	if(global.emoteeye != 7) {sfxplayed = false;}
 	// Y "Ideo"
 	if (gamepad_button_check_pressed(0, gp_face4)) {
 		if(global.emoteeye == 8) {global.emoteeye = 0} else {global.emoteeye = 8};

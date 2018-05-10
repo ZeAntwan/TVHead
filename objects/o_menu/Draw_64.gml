@@ -1,4 +1,5 @@
 /// @description DEBUG UI
+draw_set_halign(fa_left);
 draw_set_font(f_main)
 
 if (global.debugmode) {

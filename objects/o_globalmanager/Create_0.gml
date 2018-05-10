@@ -9,14 +9,18 @@ global.eyeskin = 0;
 
 // Music
 global.forcemusic = false;
-global.forcemusicstop = false;
+global.musicstop = false;
 
 // BG
 global.bgindex = 0;
 
 // Screen vars
-global.screenw = window_get_width();
-global.screenh = window_get_height();
+global.screenw = 1280;
+global.screenh = 720;
+view_hport[0] = global.screenh;
+view_wport[0] = global.screenw;
+window_set_size(global.screenw, global.screenh);
+
 global.requestfullscreen = false;
 
 // Surface and Shaders

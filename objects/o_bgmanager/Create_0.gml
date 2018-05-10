@@ -13,4 +13,4 @@ base_color = c_white
 tint_color = base_color;
 target_color = base_color;
 
-bganim = false;
+bg_anim = true;

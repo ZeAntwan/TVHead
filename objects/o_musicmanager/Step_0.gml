@@ -12,7 +12,12 @@ if (global.music or global.forcemusic) {
 		music = audio_play_sound(playmusic,10,true);
 	}
 } 
-if((!global.forcemusic and !global.music) or (global.forcemusicstop)){
+if(!global.forcemusic and !global.music) {
 	audio_stop_sound(playmusic);
-	global.forcemusicstop = false;
+}
+
+if (global.musicstop == true) {
+	global.music = false;
+	global.forcemusic = false;
+	global.musicstop = false;
 }

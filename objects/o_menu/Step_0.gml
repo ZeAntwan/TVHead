@@ -28,7 +28,7 @@ if (global.showmenu) {
 		case 1:
 			optiontext = "";
 			if (keyboard_check_pressed(vk_enter) or (gamepad_button_check_pressed(0,gp_padr))) {
-				global.showdebug = !global.showdebug;
+				global.debugmode = !global.debugmode;
 			}
 		break;
 		
@@ -45,7 +45,7 @@ if (global.showmenu) {
 		case 3:
 			optiontext = window_get_fullscreen();
 			if (keyboard_check_pressed(vk_enter) or (gamepad_button_check_pressed(0,gp_padr))) {
-				scr_fullscreen();
+				global.requestfullscreen = true;
 			}
 		break;
 		
@@ -86,9 +86,9 @@ if (global.showmenu) {
 		
 		case 7:
 			if (instance_exists(o_bgmanager)) {
-				optiontext = string(sprite_get_name(o_bgmanager.bganim));
+				optiontext = string(o_bgmanager.bg_anim);
 				if (gamepad_button_check_pressed(0,gp_padr)) {
-					o_bgmanager.bganim = !o_bgmanager.bganim;
+					o_bgmanager.bg_anim = !o_bgmanager.bg_anim;
 				}
 			} else {
 				optiontext = "Inactive";

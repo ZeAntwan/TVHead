@@ -4,7 +4,7 @@
 global.debugmode = false;
 
 // Menu setup
-global.showmenu = true;
+global.showmenu = false;
 
 select = 0;
 

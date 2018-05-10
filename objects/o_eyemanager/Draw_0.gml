@@ -52,6 +52,14 @@ if (global.eyemood == 3) {eyemoodfact3 = lerp(eyemoodfact3,1,smooth)} else {eyem
 		
 	// Right Eye
 	draw_triangle((reye_x+eyesize*3),((reye_y-eyesize+20)+30*(abs(lvaxis))+(eyesize*(1-rblink))),(reye_x-eyesize),(reye_y-2*eyesize),(reye_x-eyesize*3),((reye_y)+30*(abs(lvaxis))+30)*eyemoodfact3,false);
+	
+// Sad
+if (global.eyemood == 4) {eyemoodfact4 = lerp(eyemoodfact4,1,smooth)} else {eyemoodfact4 = lerp(eyemoodfact4,-1,smooth/2)};
+	// Left Eye
+	draw_triangle((leye_x+eyesize*3),((leye_y-eyesize+20)+30*(abs(lvaxis))+(eyesize*(1-lblink))),(leye_x-eyesize),(leye_y-2*eyesize),(leye_x-eyesize*3),((leye_y)+30*(abs(lvaxis))+30)*eyemoodfact4,false);
+		
+	// Right Eye
+	draw_triangle((reye_x-eyesize*3),((reye_y-eyesize+20)+30*(abs(lvaxis))+(eyesize*(1-rblink))),(reye_x+eyesize),(reye_y-2*eyesize),(reye_x+eyesize*3),((reye_y)+30*(abs(lvaxis))+30)*eyemoodfact4,false);
 #endregion
 
 

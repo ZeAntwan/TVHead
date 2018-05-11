@@ -1,2 +1,2 @@
 /// @description Insert description here
-global.requestfullscreen = true;
+//global.requestfullscreen = true;

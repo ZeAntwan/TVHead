@@ -1,5 +1,8 @@
 /// @description Setup
 
+// Controler setup
+if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.1);
+
 // Eye state setup
 // Eye Mood
 global.emoteeye = 0;
@@ -10,9 +13,6 @@ global.eyeskin = 0;
 // Music
 global.forcemusic = false;
 global.musicstop = false;
-
-// BG
-global.bgindex = 0;
 
 // Screen vars
 global.screenw = 1280;

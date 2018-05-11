@@ -2,9 +2,6 @@
 
 chars_drawn = 0;
 
-// Controler setup
-if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.1);
-
 // Controlmode set
 // 0 : Both eye on L Stick
 // 1 : 1 Eye per stick

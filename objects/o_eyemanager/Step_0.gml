@@ -183,21 +183,4 @@ if (global.emoteeye == 0) {
 	//global.eyedraw = false;
 }
 
-// Secondary Controls (LB + Dpad)
-if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
-	if (gamepad_button_check_pressed(0, gp_padd)) {
-		
-	}
-	if (gamepad_button_check_pressed(0, gp_padu)) {
-		
-	}
-	if (gamepad_button_check_pressed(0, gp_padl)) {
-		global.bgindex--;
-	}
-	if (gamepad_button_check_pressed(0, gp_padr)) {
-		global.bgindex++;
-	}
-	
-}
-
 #endregion

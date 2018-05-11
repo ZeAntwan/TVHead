@@ -5,6 +5,7 @@ if (keyboard_check_pressed(vk_tab)) {global.debugmode = !global.debugmode};
 
 if (keyboard_check_pressed(vk_space) or (gamepad_button_check_pressed(0,gp_select))) {global.showmenu = !global.showmenu};
 
+
 if (keyboard_check_pressed(vk_right) or (gamepad_button_check_pressed(0,gp_padr))) {sright = true} else {sright = false};
 if (keyboard_check_pressed(vk_left) or (gamepad_button_check_pressed(0,gp_padl))) {sleft = true} else {sleft = false};
 

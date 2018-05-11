@@ -1,5 +1,8 @@
 /// @description Insert description here
 
+// BG
+global.bgindex = 0;
+
 global.forcebgstop = false;
 
 bg_array = [

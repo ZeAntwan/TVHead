@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "6a5b8fc0-db0c-481d-8651-8443f7108006",
+            "Value": {
+                "id": "2423cf6c-c6ce-44d8-9413-fbe93f0a1031",
+                "resourcePath": "views\\6a5b8fc0-db0c-481d-8651-8443f7108006.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6e8c1902-58b8-406d-880c-46026fde487e",
             "Value": {
                 "id": "390dc2eb-629a-4d24-8323-8c543c34da59",
@@ -228,6 +236,14 @@
                 "id": "f0a9bdd6-746a-4feb-84c4-6d2b8390ed89",
                 "resourcePath": "objects\\o_startup\\o_startup.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7785e8af-c727-4356-a3ff-bd20621a75c4",
+            "Value": {
+                "id": "ff63dfd2-3e6b-4c2c-905e-a41f5568074d",
+                "resourcePath": "rooms\\rm_face\\rm_face.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -260,6 +276,14 @@
                 "id": "0e8c07e0-fe3d-4a4b-81a3-9e6269922cca",
                 "resourcePath": "objects\\o_eyemanager\\o_eyemanager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "838fbc3a-1d70-432a-aa01-538218c084a9",
+            "Value": {
+                "id": "b7c64b6a-b700-4bfa-b017-3f30658a2f4d",
+                "resourcePath": "sprites\\s_face\\s_face.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -340,6 +364,14 @@
                 "id": "2b01a004-e8e1-48a9-ab87-2a9af4d30cca",
                 "resourcePath": "views\\a97e3ec6-0593-4cd5-b70e-05f05285def1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "afb3d227-4dd9-4305-abcc-ac9bb1090980",
+            "Value": {
+                "id": "ff3d0e2a-c638-446c-af79-60ab249e410b",
+                "resourcePath": "objects\\o_facemanager\\o_facemanager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -516,6 +548,14 @@
                 "id": "923207f1-43dc-412d-8f77-57f3cf9d3527",
                 "resourcePath": "views\\e1c642a2-8adc-4388-bcd5-fbcfc960956f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e4674082-f961-4716-a854-c2facf3c8817",
+            "Value": {
+                "id": "faff91dc-f49d-46ad-8d64-f23e9efc3ff4",
+                "resourcePath": "sounds\\mus_polo\\mus_polo.yy",
+                "resourceType": "GMSound"
             }
         },
         {

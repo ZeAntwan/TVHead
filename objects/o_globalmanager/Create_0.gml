@@ -17,9 +17,9 @@ global.bgindex = 0;
 // Screen vars
 global.screenw = 1280;
 global.screenh = 720;
-view_hport[0] = global.screenh;
-view_wport[0] = global.screenw;
-window_set_size(global.screenw, global.screenh);
+//view_hport[0] = global.screenh;
+//view_wport[0] = global.screenw;
+//window_set_size(global.screenw, global.screenh);
 
 global.requestfullscreen = false;
 

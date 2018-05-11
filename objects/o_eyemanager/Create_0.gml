@@ -1,5 +1,7 @@
 /// @description Setup
 
+chars_drawn = 0;
+
 // Controler setup
 if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.1);
 
@@ -50,6 +52,7 @@ rblink = 0;
 lblink = 0;
 
 eyesurf = surface_create(room_width,room_height);
+codesurf = surface_create(room_width,room_height);
 
 /// Eye Emotes and Mood settings
 
@@ -60,7 +63,7 @@ cn = 10;
 // Code Text
 linecount = 0;
 file = file_text_open_read(working_directory + "\code.txt")
-codetext = file_text_read_string(file);
+codetxt = file_text_read_string(file);
 //codetext = "Test#2ndeligne";
 file_text_close(file)
 

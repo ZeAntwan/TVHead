@@ -12,14 +12,15 @@ select = 0;
 options = [
 "Close Menu", // 0
 "Show Debug", // 1
-"Room", // 1
-"Fullscreen", // 2
-"Set Emote", // 3
-"Set Skin", // 4
-"Background", // 5
-"Bg Anim", // 6
-"Music", // 7
-"Force Play Music", // 8
+"Quit", // 2
+"Room", // 3
+"Fullscreen", // 4
+"Set Emote", // 5
+"Set Skin", // 6
+"Background", // 7
+"Stop Bg Anim", // 8
+"Music", // 9
+"Force Play Music", // 10
 ];
 
 optiontext = "";

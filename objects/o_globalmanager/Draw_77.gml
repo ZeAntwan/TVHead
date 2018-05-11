@@ -23,4 +23,6 @@ shader_set_uniform_f(sTime,get_timer()/1000000);
 shader_set_uniform_f(sRes,global.screenw,global.screenh);
 
 draw_surface(application_surface, 0, 0);
+
+
 shader_reset();

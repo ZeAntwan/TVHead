@@ -1,5 +1,7 @@
 /// @description Insert description here
 
+global.forcebgstop = false;
+
 bg_array = [
 sprite_index,
 bg_vid,

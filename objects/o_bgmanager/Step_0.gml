@@ -22,4 +22,5 @@ if (instance_exists(o_eyemanager)) {
 	}
 }
 
+if (global.forcebgstop) {bg_anim = false;};
 tint_color = merge_color(tint_color,target_color,0.2)	

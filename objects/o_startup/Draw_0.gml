@@ -1,22 +1,56 @@
 /// @description Insert description here
 
-if(!surface_exists(startupsurf)) {surface_create(room_width,room_height)};
+if(!surface_exists(startupsurf)) {startupsurf = surface_create(room_width,room_height)};
 
 surface_set_target(startupsurf);
 draw_clear_alpha(c_black,0);
+
 draw_set_color(c_white);
 
 draw_set_halign(fa_left);
 draw_set_font(f_code);
-text = "PATATE"
-scr_TextDisplay(text,50,50);
+text = @"SYSTEM IS BOOTING UP
 
+BRAIN PROCESSOR..... OK
+MEMCHK 2500 TB...... OK
+THINK SUBSYSTEM..... SKIPPED
 
-if (chars_drawn < string_length(text)) {
-	chars_drawn++;
+Reticulating Splines
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+NEW SCREEN
+Z
+Z
+Z
+Z
+Z
+Z
+SYSTEM READY"
+
+if (!scr_TextDisplay(text,50,50,621)) {
+	if (!audio_is_playing(s_startup) and !sfxplayed_1) {
+		audio_play_sound(s_startupboot,1,false);
+		sfxplayed_1 = true;
+	}
+	draw_sprite_ext(s_k7roll,0,room_width-sprite_get_width(s_k7roll)*.5,sprite_get_height(s_k7roll)*.5,.5,.5,costime*-2,c_white,.5);
+	
 } else {
 	cosfactor = 1 + sin(costime * 0.05) * 0.05;
-	costime++
 	// Draw logo
 	logoanim = lerp(logoanim,1,0.1);
 	txtanim = lerp(txtanim,1,0.3);
@@ -35,5 +69,4 @@ if (chars_drawn < string_length(text)) {
 	if(alarm[0] = -1) alarm_set(0,room_speed*10);
 }
 
-
-surface_reset_target();
+costime++

@@ -97,7 +97,10 @@ if (gamepad_button_check_pressed(0, gp_face1)
 	or gamepad_button_check_pressed(0, gp_face2) 
 	or gamepad_button_check_pressed(0, gp_face3) 
 	or gamepad_button_check_pressed(0, gp_face4)) 
-	{moodsmooth = 0};
+	{
+		moodsmooth = 0;
+		sfxplayed = false;
+	};
 
 // Eyes Emote
 if (!gamepad_button_check(0,gp_shoulderl)) {
@@ -120,7 +123,15 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 
 	// Y "Idea"
 	if (gamepad_button_check_pressed(0, gp_face4)) {
-		if(global.emoteeye == 4) {global.emoteeye = 0} else {global.emoteeye = 4};
+		if(global.emoteeye == 4) {global.emoteeye = 0} else {
+			global.emoteeye = 4
+			// SFX
+			//global.musicstop = true;
+			if (!audio_is_playing(s_1up) and !sfxplayed) {
+				audio_play_sound(s_1up,15,false);
+				sfxplayed = true;
+			};
+		};
 	}
 } else {
 	// Secondary Mode
@@ -146,10 +157,12 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 			};
 		};
 	}
-	if(global.emoteeye != 7) {sfxplayed = false;}
-	// Y "Ideo"
+
+	// Y "Code"
 	if (gamepad_button_check_pressed(0, gp_face4)) {
-		if(global.emoteeye == 8) {global.emoteeye = 0} else {global.emoteeye = 8};
+		if(global.emoteeye == 8) {global.emoteeye = 0} else {
+			global.emoteeye = 8
+		};
 	}
 	
 	// Toggle Blink

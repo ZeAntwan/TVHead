@@ -9,38 +9,6 @@ draw_set_color(c_white);
 
 draw_set_halign(fa_left);
 draw_set_font(f_code);
-text = @"SYSTEM IS BOOTING UP
-
-BRAIN PROCESSOR..... OK
-MEMCHK 2500 TB...... OK
-THINK SUBSYSTEM..... SKIPPED
-
-Reticulating Splines
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-Z
-NEW SCREEN
-Z
-Z
-Z
-Z
-Z
-Z
-SYSTEM READY"
 
 if (!scr_TextDisplay(text,50,50,621)) {
 	if (!audio_is_playing(s_startup) and !sfxplayed_1) {

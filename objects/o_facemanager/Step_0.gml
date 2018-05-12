@@ -1,5 +1,4 @@
-/// @description Main Controls
-
+/// @description Insert description here
 // Axis variables
 lhaxis = gamepad_axis_value(0,gp_axislh);
 lvaxis = gamepad_axis_value(0,gp_axislv);
@@ -9,58 +8,16 @@ rvaxis = gamepad_axis_value(0,gp_axisrv);
 rtaxis = gamepad_button_value(0, gp_shoulderrb)
 ltaxis = gamepad_button_value(0, gp_shoulderlb)
 
-// Cosinus animation factor
-cosfactor = 1 + sin(costime * 0.1) * 0.1;
-cosfactor2 = 1 + sin(costime * 0.1) * 0.3;
-costime++;
+// Global Face Movement 
+x = lerp(x, dx + lhaxis*(eyeradius*1.5),eyesmooth);
+y = lerp(y, dy + lvaxis*eyeradius,eyesmooth);
 
-#region Global Eye Movement 
-if (global.controlmode == 0) {
-	leye_x = lerp(leye_x, leye_dx + lhaxis*eyeradius,eyesmooth);
-	leye_y = lerp(leye_y, leye_dy + lvaxis*eyeradius,eyesmooth);
-	
-	reye_x = lerp(reye_x, reye_dx + lhaxis*eyeradius,eyesmooth);
-	reye_y = lerp(reye_y, reye_dy + lvaxis*eyeradius,eyesmooth);
-}
-
-if (global.controlmode == 1) {
-	leye_x = lerp(leye_x, leye_dx + lhaxis*eyeradius,eyesmooth);
-	leye_y = lerp(leye_y, leye_dy + lvaxis*eyeradius,eyesmooth);
-	
-	reye_x = lerp(reye_x, reye_dx + rhaxis*eyeradius,eyesmooth);
-	reye_y = lerp(reye_y, reye_dy + rvaxis*eyeradius,eyesmooth);
-}
-
-// Blink
-	
-if (gamepad_button_check(0,gp_shoulderr) or forceblink or blink) {
-	rblink = lerp(rblink,0,0.7);
-	lblink = lerp(lblink,0,0.7);
+// Orientation
+if (point_distance(dx,dy,x,y) > eyeradius/2) {
+	dir = point_direction(dx,dy,x,y)
 } else {
-	rblink = lerp(rblink,(1-rtaxis),0.7);
-	lblink = lerp(lblink,(1-ltaxis),0.7);
+	dir = 0;
 }
-
-// Woot eyes
-if (gamepad_button_check(0, gp_stickr)) {
-	global.emoteeye = 0;
-	leyesize = lerp(leyesize,(cosfactor2*eyesize),smooth);
-	reyesize = lerp(reyesize,((1/cosfactor2)*eyesize),smooth);
-} else {
-	leyesize = lerp(leyesize,eyesize,smooth);
-	reyesize = lerp(reyesize,eyesize,smooth);
-}
-
-// Right axis Eyesize
-leyesize = lerp(leyesize,eyesize-(rvaxis*(eyesize/2)),smooth);
-reyesize = lerp(reyesize,eyesize-(rvaxis*(eyesize/2)),smooth);
-
-// Control mode change 
-if (gamepad_button_check_pressed(0,gp_start)) {
-	if (global.controlmode == 0) {global.controlmode = 1}
-	else {global.controlmode = 0}
-}
-#endregion
 
 // Mood Change
 if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {
@@ -183,3 +140,4 @@ if (global.emoteeye == 0) {
 }
 
 #endregion
+

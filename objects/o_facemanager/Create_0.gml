@@ -6,31 +6,30 @@ chars_drawn = 0;
 // 0 : Both eye on L Stick
 // 1 : 1 Eye per stick
 global.controlmode = 0;
-global.eyedraw = true;
 
 //// Var Setup
+// Sprite
+osprite = sprite_index;
+salpha = 1;
+size = .5
+
 // Eyesize
 eyesize = room_width*(8/100);
 leyesize = eyesize;
 reyesize = eyesize;
-eyeradius = (room_width/4) - (eyesize);
+eyeradius = (room_height/6);
 
 //// Eye Mood
 //global.emoteeye = 0;
 //global.eyemood = 0;
-
-eyemoodmod = 25;
-
-eyemoodfact = 0;
-eyemoodfact2 = 0;
-eyemoodfact3 = 0;
-eyemoodfact4 = 0;
 
 // Smooth
 smooth = 0.3;
 eyesmooth = 0.5;
 costime = 0;
 moodsmooth = 0;
+cosfactor = 1;
+activebounce = false;
 
 // Default position
 dx = room_width/2;

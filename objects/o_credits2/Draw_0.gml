@@ -1,8 +1,6 @@
 /// @description Insert description here
-draw_set_font(f_code);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-if (!scr_TextDisplay(text1,50,50,621)) {
+draw_set_font(f_codesmall);
+if (!scr_TextDisplayBot(text2,50,400,621)) {
 	//if (!audio_is_playing(s_startup) and !sfxplayed_1) {
 	//	audio_play_sound(s_startupboot,1,false);
 	//	sfxplayed_1 = true;

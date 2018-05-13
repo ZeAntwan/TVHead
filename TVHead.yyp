@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "167426db-a3a9-4218-9f20-d915f3c406ba",
+            "Value": {
+                "id": "c5a6d81d-2ec2-46cd-84a9-04ed58b18251",
+                "resourcePath": "fonts\\f_codesmall\\f_codesmall.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "16b20a0e-f6f9-4726-8441-9ef530257b52",
             "Value": {
                 "id": "0a28f9f9-073f-4f37-92ea-68a821cd263e",
@@ -99,6 +107,14 @@
             "Value": {
                 "id": "955df6d7-7780-4a46-a9f9-579941d04812",
                 "resourcePath": "objects\\o_musicmanager\\o_musicmanager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1a31df83-3a92-45b7-95f9-373a942acf58",
+            "Value": {
+                "id": "8becb7e6-7bf4-486c-921d-2107b51bae14",
+                "resourcePath": "objects\\o_credits2\\o_credits2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -463,6 +479,14 @@
             }
         },
         {
+            "Key": "ca07f33e-91a5-4b7b-a081-0bd2566fb332",
+            "Value": {
+                "id": "18edfb89-960a-419b-afb3-8e1e564c7c3d",
+                "resourcePath": "scripts\\scr_TextDisplayBot\\scr_TextDisplayBot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc3436f4-dd7a-4178-bb65-94940141975a",
             "Value": {
                 "id": "e8b64765-b1df-4e08-aebc-478e333b171c",
@@ -633,6 +657,7 @@
     ],
     "script_order": [
         "743e0819-f34c-44ec-96b6-a6e004a55f89",
+        "ca07f33e-91a5-4b7b-a081-0bd2566fb332",
         "40e8bc0b-cd72-48a0-b2f3-46a5a9caa160",
         "9a5b2b02-e5ba-4565-91da-bfd3f8bcc2be",
         "052a201b-7e12-49d1-a853-ba17f9e82cf5",

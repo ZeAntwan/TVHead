@@ -38,15 +38,18 @@ if (outangle) {
 	subimg = 0
 }
 
-if (global.eyemood == 0) {sprite_index = osprite}
-if (global.eyemood == 1) {
-	sprite_index = s_face2;
-	posbounce = true;
-	//sizebounce = true;
+// Change Sprite depending on mood
+sprite_index = osprite;
+
+switch global.eyemood {
+	case 1:
+		sprite_index = s_face2;
+		posbounce = true;
+		//sizebounce = true;
+	break;
 }
 
-
-
+// Stop bounce if moving head out of outangle
 if (subimg != 0) {
 	posbounce = false;
 	sizebounce = false;
@@ -54,8 +57,7 @@ if (subimg != 0) {
 // Draw the sprite
 draw_sprite_ext(sprite_index,subimg,x,y+(cospos*250),(size)*(cossize),(size)*(cossize),0,c_white,salpha);
 
-
-// Debug Center
+// Debug Center point
 if (global.debugmode) {
 	draw_circle(x,y,5,false);
 }

@@ -29,7 +29,11 @@ eyesmooth = 0.5;
 costime = 0;
 moodsmooth = 0;
 cosfactor = 1;
-activebounce = false;
+
+cospos = 0;
+cossize = 1;
+posbounce = false;
+sizebounce = false;
 
 // Default position
 dx = room_width/2;

@@ -14,10 +14,11 @@ y = lerp(y, dy + lvaxis*eyeradius,eyesmooth);
 
 // Orientation
 if (point_distance(dx,dy,x,y) > eyeradius/2) {
-	dir = point_direction(dx,dy,x,y)
+	outangle = true;
 } else {
-	dir = 0;
+	outangle = false;
 }
+dir = point_direction(dx,dy,x,y)
 
 // Mood Change
 if (!global.showmenu and !gamepad_button_check(0,gp_shoulderl)) {

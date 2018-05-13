@@ -41,6 +41,11 @@ if (gamepad_button_check(0,gp_shoulderr) or forceblink or blink) {
 	lblink = lerp(lblink,(1-ltaxis),0.7);
 }
 
+
+// Right axis Eyesize
+leyesize = lerp(leyesize,eyesize-(rvaxis*(eyesize)),smooth);
+reyesize = lerp(reyesize,eyesize-(rvaxis*(eyesize)),smooth);
+
 // Woot eyes
 if (gamepad_button_check(0, gp_stickr)) {
 	global.emoteeye = 0;
@@ -51,9 +56,6 @@ if (gamepad_button_check(0, gp_stickr)) {
 	reyesize = lerp(reyesize,eyesize,smooth);
 }
 
-// Right axis Eyesize
-leyesize = lerp(leyesize,eyesize-(rvaxis*(eyesize/2)),smooth);
-reyesize = lerp(reyesize,eyesize-(rvaxis*(eyesize/2)),smooth);
 
 // Control mode change 
 if (gamepad_button_check_pressed(0,gp_start)) {

@@ -1449,7 +1449,7 @@
             "y": 127
         }
     ],
-    "sampleText": "This is a test uuuu",
+    "sampleText": "This is a test uuuu ",
     "size": 20,
     "styleName": "Regular",
     "textureGroupId": "00000000-0000-0000-0000-000000000000"

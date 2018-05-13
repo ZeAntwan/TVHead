@@ -4,12 +4,12 @@ draw_set_font(f_main)
 
 if (global.debugmode) {
 	draw_text(5,5,"Emote : " + string(global.emoteeye));
-	draw_text(5,30,"Mood : " + string(global.eyemood));
-	draw_text(5,55,"Timer : " + string(get_timer()/1000000));
-	draw_text(5,80,"Window : " + string(global.screenw) + " * " + string(global.screenh)) ;
-	draw_text(5,110,"App surface : " + string(surface_get_width(application_surface)) + " * " + string(surface_get_height(application_surface))) ;
-	//draw_text(5,140,"BG img : " + string(o_bgmanager._img)) ;
-	draw_text(5,170,"FPS : " + string(fps)) ;
+	draw_text(5,35,"Mood : " + string(global.eyemood));
+	draw_text(5,65,"Timer : " + string(get_timer()/1000000));
+	draw_text(5,95,"Window : " + string(global.screenw) + " * " + string(global.screenh)) ;
+	draw_text(5,125,"App surface : " + string(surface_get_width(application_surface)) + " * " + string(surface_get_height(application_surface))) ;
+	draw_text(5,155,"Room Size : " + string(room_width) + " * " + string(room_height)) ;
+	draw_text(5,185,"FPS : " + string(fps)) ;
 }
 
 if (global.showmenu) {

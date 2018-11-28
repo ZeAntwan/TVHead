@@ -1,6 +1,6 @@
 /// @description Main Controls
 
-// Axis variables
+// Gamepad Axis variables
 lhaxis = gamepad_axis_value(0,gp_axislh);
 lvaxis = gamepad_axis_value(0,gp_axislv);
 rhaxis = gamepad_axis_value(0,gp_axisrh);
@@ -8,6 +8,12 @@ rvaxis = gamepad_axis_value(0,gp_axisrv);
 
 rtaxis = gamepad_button_value(0, gp_shoulderrb)
 ltaxis = gamepad_button_value(0, gp_shoulderlb)
+
+// Mouse calculation
+
+mousex = (mouse_x - room_width/2)/(room_width/2)
+mousey = (mouse_y - room_height/2)/(room_height/2)
+
 
 // Cosinus animation factor
 cosfactor = 1 + sin(costime * 0.1) * 0.1;
@@ -27,10 +33,16 @@ if (global.controlmode == 1) {
 	leye_x = lerp(leye_x, leye_dx + lhaxis*eyeradius,eyesmooth);
 	leye_y = lerp(leye_y, leye_dy + lvaxis*eyeradius,eyesmooth);
 	
-	reye_x = lerp(reye_x, reye_dx + rhaxis*eyeradius,eyesmooth);
-	reye_y = lerp(reye_y, reye_dy + rvaxis*eyeradius,eyesmooth);
+	reye_x = lerp(reye_x, reye_dx + lhaxis*eyeradius,eyesmooth);
+	reye_y = lerp(reye_y, reye_dy + lvaxis*eyeradius,eyesmooth);
 }
-
+if (global.controlmode == 2) {
+	leye_x = lerp(leye_x, leye_dx + mousex*eyeradius,eyesmooth);
+	leye_y = lerp(leye_y, leye_dy + mousey*eyeradius,eyesmooth);
+	
+	reye_x = lerp(reye_x, reye_dx + mousex*eyeradius,eyesmooth);
+	reye_y = lerp(reye_y, reye_dy + mousey*eyeradius,eyesmooth);
+}
 // Blink
 	
 if (gamepad_button_check(0,gp_shoulderr) or forceblink or blink) {

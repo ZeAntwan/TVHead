@@ -13,12 +13,14 @@ draw_set_color(c_white);
 
 #region Draw Eye
 // LEFT EYE
-//draw_circle(leye_x,leye_y,eyesize,false);
-draw_ellipse(leye_x-leyesize , leye_y-(leyesize*(lblink)) , leye_x+leyesize , leye_y+(leyesize*(lblink)) , false)
+if global.eyeleft
+	//draw_circle(leye_x,leye_y,eyesize,false);
+	scr_eyedraw(o_eyemanager.leye_x,o_eyemanager.leye_y, o_eyemanager.leyesize, o_eyemanager.lblink, 1, false)
 
 // RIGHT EYE
-//draw_circle(reye_x,reye_y,eyesize,false);
-draw_ellipse(reye_x-reyesize , reye_y-(reyesize*(rblink)) , reye_x+reyesize , reye_y+(reyesize*(rblink)) , false)
+if global.eyeright
+	//draw_circle(reye_x,reye_y,eyesize,false);
+	scr_eyedraw(o_eyemanager.reye_x,o_eyemanager.reye_y, o_eyemanager.reyesize, o_eyemanager.rblink, 1, false);
 
 // Eye covers
 gpu_set_blendmode(bm_subtract);

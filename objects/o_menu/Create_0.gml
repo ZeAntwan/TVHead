@@ -21,6 +21,7 @@ options = [
 "Stop Bg Anim", // 8
 "Music", // 9
 "Force Play Music", // 10
+"Control Mode" // 11
 ];
 
 optiontext = "";

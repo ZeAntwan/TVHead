@@ -5,8 +5,13 @@ chars_drawn = 0;
 // Controlmode set
 // 0 : Both eye on L Stick
 // 1 : 1 Eye per stick
+// 2 : Mouse
 global.controlmode = 0;
+
+// Draw eyes
 global.eyedraw = true;
+global.eyeleft = true;
+global.eyeright = true;
 
 //// Var Setup
 // Eyesize
@@ -52,6 +57,9 @@ eyesurf = surface_create(room_width,room_height);
 codesurf = surface_create(room_width,room_height);
 
 /// Eye Emotes and Mood settings
+
+// Tape Rot
+taperot = 0;
 
 // Loading
 d = room_height/3; //diameter in pixels of the circle

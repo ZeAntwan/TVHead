@@ -1,6 +1,6 @@
 /// @description Setup
 
-// Controler setup
+// Controller setup
 if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.1);
 
 // Eye state setup

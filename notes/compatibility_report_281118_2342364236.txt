@@ -1,0 +1,132 @@
+Converting GML script: ${project_dir}\scripts\edgefmv_pause\edgefmv_pause.gml
+Converted description /// @description edgefmv_pause();
+
+Converting GML script: ${project_dir}\scripts\edgefmv_skip\edgefmv_skip.gml
+Converted description /// @description edgefmv_skip();
+
+Converting GML script: ${project_dir}\scripts\edgefmv_seek\edgefmv_seek.gml
+Converted description /// @description edgefmv_seek(time);/// @param time
+
+Converting GML script: ${project_dir}\scripts\edgefmv_set_volume\edgefmv_set_volume.gml
+Converted description /// @description edgefmv_set_volume(volume);/// @param volume
+
+Converting GML script: ${project_dir}\scripts\edgefmv_get_time\edgefmv_get_time.gml
+Converted description /// @description edgefmv_get_time();
+
+Converting GML script: ${project_dir}\scripts\edgefmv_draw_progress\edgefmv_draw_progress.gml
+Converted description /// @description edgefmv_draw_progress(x1, y1, x2, y2, col1, col2, col3, col4, outline);/// @param x1
+/// @param  y1
+/// @param  x2
+/// @param  y2
+/// @param  col1
+/// @param  col2
+/// @param  col3
+/// @param  col4
+/// @param  outline
+
+Converting GML script: ${project_dir}\scripts\edgefmv_load\edgefmv_load.gml
+Converted description /// @description edgefmv_load(fname);/// @param fname
+Converted string - line 32: "\" -> "\\"
+Converted string - line 33: "\" -> "\\"
+Converted string - line 36: "\" -> "\\"
+Converted string - line 36: "\" -> "\\"
+Converted string - line 48: "\" -> "\\"
+Converted string - line 52: "\" -> "\\"
+Converted string - line 85: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 85: "\" -> "\\"
+Converted string - line 89: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 89: "\" -> "\\"
+Converted string - line 114: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 114: "\" -> "\\"
+Converted string - line 119: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 119: "\" -> "\\"
+Converted string - line 152: "\" -> "\\"
+Converted string - line 156: "\" -> "\\"
+
+Converting GML script: ${project_dir}\scripts\edgefmv_play\edgefmv_play.gml
+Converted description /// @description edgefmv_play(framerate, a/v offset, x, y, xscale, yscale, rot, color, alpha, hidemouse, loop);/// @param framerate
+/// @param  a/v offset
+/// @param  x
+/// @param  y
+/// @param  xscale
+/// @param  yscale
+/// @param  rot
+/// @param  color
+/// @param  alpha
+/// @param  hidemouse
+/// @param  loop
+
+Converting GML script: ${project_dir}\scripts\edgefmv_unload\edgefmv_unload.gml
+Converted description /// @description edgefmv_unload(fname);/// @param fname
+Converted string - line 26: "\" -> "\\"
+Converted string - line 27: "\" -> "\\"
+Converted string - line 30: "\" -> "\\"
+Converted string - line 30: "\" -> "\\"
+Converted string - line 47: "\" -> "\\"
+Converted string - line 96: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 97: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 109: "\" -> "\\"
+Converted string - line 111: "\" -> "\\"
+Converted string - line 115: "\" -> "\\"
+Converted string - line 175: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 175: "\" -> "\\"
+Converted string - line 179: "\" -> "\\"
+Converted string - line 228: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 228: "\" -> "\\"
+Converted string - line 229: "\cache\fmv\" -> "\\cache\\fmv\\"
+Converted string - line 229: "\" -> "\\"
+
+!!! Font Orbitron uses a font (Orbitron-Medium) not installed on this system - Font has NOT been regenerated
+Converting GML script: ${project_dir}\objects\obj_fmv\Create_0.gml
+Converted description /// @description Execute script: edgefmv_load
+Converted string - line 2: "Demo\thinkboxly-logo.fmv" -> "Demo\\thinkboxly-logo.fmv"
+
+Converting GML script: ${project_dir}\objects\obj_fmv\Mouse_53.gml
+Converted description /// @description Execute Script: edgefmv_pause
+
+Converting GML script: ${project_dir}\objects\obj_fmv\Draw_0.gml
+Converted builtin - line 9: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 9: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 15: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 9: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 9: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 14: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 15: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 18: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 18: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 19: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 19: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 9: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 14: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 15: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 18: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 9: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 14: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 15: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 18: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 18: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 19: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 19: view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: ${project_dir}\objects\obj_fmv\KeyPress_85.gml
+Converted description /// @description Execute Script: edgefmv_unload
+
+Converting GML script: ${project_dir}\objects\obj_fmv\KeyPress_83.gml
+Converted description /// @description Execute Script: edgefmv_skip
+
+Converting GML script: ${project_dir}\objects\obj_fmv\KeyPress_32.gml
+Converted description /// @description Execute Script: edgefmv_pause
+
+Added compatibility script 'action/action_restart_game.gml'
+Added compatibility script 'draw/draw_set_blend_mode.gml'
+Added compatibility script 'draw/draw_set_blend_mode_ext.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'

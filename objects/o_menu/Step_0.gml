@@ -131,6 +131,16 @@ if (global.showmenu) {
 				global.forcemusic = false;
 			}
 		break;
+		
+		case 11:
+			optiontext = string(global.controlmode);
+			if (sright) {
+				global.controlmode++;
+			}
+			if (sleft) {
+				global.controlmode--;
+			}
+		break;
 		}
 	
 }

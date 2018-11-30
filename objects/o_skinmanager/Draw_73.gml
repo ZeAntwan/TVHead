@@ -21,7 +21,7 @@ switch global.eyeskin {
 		var wiggleeye_x = random_range(-3,3)
 		var wiggleeye_y = random_range(-3,3)
 		
-		scr_eyedraw(o_eyemanager.reye_x+wiggleeye_x,o_eyemanager.reye_y+wiggleeye_y, o_eyemanager.reyesize, o_eyemanager.rblink, 1, true);
+		scr_eyedraw(o_eyemanager.reye_x,o_eyemanager.reye_y, o_eyemanager.reyesize, o_eyemanager.rblink, 1, true);
 		
 		draw_set_color(sanscol);
 		scr_eyedraw(o_eyemanager.reye_x+wiggleeye_x,o_eyemanager.reye_y+wiggleeye_y, o_eyemanager.reyesize, o_eyemanager.rblink, .7, false);

@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "32b57c40-c990-45f5-9daa-0133e8dea67e",
+            "Value": {
+                "id": "9d96bcad-8af1-4e37-b5e7-491ed793e4b7",
+                "resourcePath": "views\\32b57c40-c990-45f5-9daa-0133e8dea67e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "35303bc5-2e5d-4527-a1dc-aae45b042d5f",
             "Value": {
                 "id": "bc01121b-e2d2-4a0e-9f4e-071a3e85fec7",
@@ -236,6 +244,22 @@
                 "id": "b1f6277d-4422-4b96-9e52-8291ce6f54e3",
                 "resourcePath": "views\\38adf741-5f94-44a4-b4d2-723ba6fd12c9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3b6fc608-a014-4820-a25e-064d94f02f08",
+            "Value": {
+                "id": "4024471d-1e3b-4a7a-b75f-dd2fbfd8ccb4",
+                "resourcePath": "views\\3b6fc608-a014-4820-a25e-064d94f02f08.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3e1f8ec8-b65c-4429-910c-68ce820f95f2",
+            "Value": {
+                "id": "b0f43c00-a9e0-4005-bb71-bbdfbc9cb991",
+                "resourcePath": "sprites\\u_menu\\u_menu.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -331,6 +355,14 @@
             "Value": {
                 "id": "55bac00f-2afa-4f9f-b775-12723227fc73",
                 "resourcePath": "views\\5bb5ae1a-2dc3-40db-8cb1-2efbfad635ec.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "634c99ca-d278-4ca5-a782-10389388c561",
+            "Value": {
+                "id": "60d1b1c3-d0fa-44dc-ad25-7d750bb60ddf",
+                "resourcePath": "views\\634c99ca-d278-4ca5-a782-10389388c561.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -487,6 +519,14 @@
             }
         },
         {
+            "Key": "88fe39ce-014f-42b0-a57f-c615d0855131",
+            "Value": {
+                "id": "22407093-0a8b-49dc-9285-6964d83b779b",
+                "resourcePath": "sprites\\sprite21\\sprite21.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8975c30c-83df-4f45-84d5-ed517b4f58e2",
             "Value": {
                 "id": "eb12aebf-d272-4f54-8e7e-af044c5ce0d3",
@@ -511,11 +551,27 @@
             }
         },
         {
+            "Key": "97fbde7c-1443-4912-ac51-01f527bb1cbe",
+            "Value": {
+                "id": "af1156c8-e772-4403-93a6-b8f5117d59b8",
+                "resourcePath": "sprites\\u_video\\u_video.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9a5b2b02-e5ba-4565-91da-bfd3f8bcc2be",
             "Value": {
                 "id": "c62fbaf5-8d3a-4591-9382-8f600bcc12fc",
                 "resourcePath": "scripts\\Singleton\\Singleton.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9a86ddc2-ed1c-4bde-b300-c9fe00fc83d0",
+            "Value": {
+                "id": "1cfe366d-da35-4e82-9ecb-1dc6ce9b21cc",
+                "resourcePath": "datafiles_yy\\bg\\neon.fmv.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -868,6 +924,22 @@
                 "id": "8433cfee-11dc-4e61-985e-6bb9c5b5b9e1",
                 "resourcePath": "fonts\\f_code\\f_code.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "df230038-10e4-43a6-b326-b8fd876fa58f",
+            "Value": {
+                "id": "b350fab5-f823-4e08-98ac-51f912e1d59a",
+                "resourcePath": "sprites\\bg_under\\bg_under.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df263198-f722-4020-a667-442446189579",
+            "Value": {
+                "id": "7b12fb16-3580-4030-b1a0-27479ddc37fc",
+                "resourcePath": "objects\\o_videomanager\\o_videomanager.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,16 +1,16 @@
 /// @description Insert description here
 
-// BG
-global.bgindex = 0;
-
-global.forcebgstop = false;
-
 bg_array = [
 sprite_index,
 bg_vid,
 bg_laia,
 bg_neon
 ];
+
+vid_array = [
+noone,
+"neon"
+]
 
 _img = 0;
 
@@ -19,3 +19,5 @@ tint_color = base_color;
 target_color = base_color;
 
 bg_anim = true;
+
+usevideo = noone;

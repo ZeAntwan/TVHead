@@ -10,6 +10,10 @@ global.eyemood = 0;
 // Eye Skins
 global.eyeskin = 0;
 
+// BG
+global.bgindex = 0;
+global.forcebgstop = false;
+
 // Music
 global.forcemusic = false;
 global.musicstop = false;

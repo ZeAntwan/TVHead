@@ -6,3 +6,8 @@ if (bg_anim = true) {
 	_img++
 	if (_img > maximg) {_img = 0};
 }
+
+// Video
+if (usevideo != noone) {
+	edgefmv_play(30,0,0,0,room_width/global.fmv_frame_width,room_height/global.fmv_frame_height,0,tint_color,1,true,true);
+}

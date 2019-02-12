@@ -1,5 +1,7 @@
 /// @description Insert description here
 global.bgindex = clamp(global.bgindex,0,array_length_1d(bg_array)-1)
+
+//
 usesprite = bg_array[global.bgindex];
 
 // Mood Change

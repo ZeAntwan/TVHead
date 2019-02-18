@@ -1,7 +1,8 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
     "option_gameguid": "7a80c88b-3d76-4a10-856f-22bd2329095e",
     "option_lastchanged": "12 May 2018 3:36:21",
-    "option_author": "Antoine SARRAZIN"
+    "option_author": "Antoine SARRAZIN",
+    "option_game_speed": 30
 }←1225f6b0-ac20-43bd-a82e-be73fa0b6f4f|{
     "targets": 461609314234257646,
     "mipsToGenerate": -1,

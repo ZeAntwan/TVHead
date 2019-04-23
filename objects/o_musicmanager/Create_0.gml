@@ -68,7 +68,7 @@ audio_sound_gain(audio, 0.5, 0);
 
 
 // create the audio controls
-is_playing = true;
+is_playing = false;
 is_paused = false;
 /*
 with (instance_create_depth(room_width/2 - 64, room_height/2, depth-1, obj_aviz_play_control)) {

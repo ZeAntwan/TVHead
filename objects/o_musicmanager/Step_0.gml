@@ -12,12 +12,12 @@ if (global.music or global.forcemusic) {
 	 // music = audio_play_sound(playmusic,10,true);
 		
 	} 
-	
-	}
-if (global.forcemusic) {
-	if (!is_playing) { event_user(EVENT_PLAY)}
+
+	if (!is_playing) {
+		event_user(4)
+	} else {
 	// every step, queue up another bit of audio
-		event_user(EVENT_TICK);
+		event_user(0);
 		
 		// because audio queues automatically stop playing if it runs out of buffer
 				// sometimes if our ticks are behind the playback (e.g. if you dragged a window)
@@ -27,10 +27,13 @@ if (global.forcemusic) {
 
 	if (not audio_is_playing(audio)) {
 		audio_play_sound(audio, 0, 0);
-		show_debug_message("GOOD")
+		// show_debug_message("GOOD")
+	}
 	}
 } else {
-	event_user(EVENT_STOP);
+	if (is_playing) {
+		event_user(3);
+	}
 }
 if(!global.forcemusic and !global.music) {
 	audio_stop_sound(playmusic);

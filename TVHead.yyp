@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "0dd8453d-4ecf-4e23-b693-a718eca1d897",
+            "Value": {
+                "id": "0113ce04-b4a0-4714-b3fd-d436b2055338",
+                "resourcePath": "rooms\\rm_aviz_demo1\\rm_aviz_demo1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "142b21db-194c-4f99-9660-4462c66ef3f3",
             "Value": {
                 "id": "47a744e4-1db6-44e0-806d-55c2454be900",
@@ -191,6 +199,14 @@
             }
         },
         {
+            "Key": "2ef56f4d-da49-4a1d-8907-2be0da7fc654",
+            "Value": {
+                "id": "bc654c39-26c3-4f3b-ba92-3707965e6a3e",
+                "resourcePath": "rooms\\rm_aviz_demo3\\rm_aviz_demo3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "31bb7529-2c0a-4788-a05e-3c8c0e162cca",
             "Value": {
                 "id": "7a7b94dc-324d-4b46-80ea-0e8b40daf39c",
@@ -220,6 +236,14 @@
                 "id": "bc01121b-e2d2-4a0e-9f4e-071a3e85fec7",
                 "resourcePath": "views\\35303bc5-2e5d-4527-a1dc-aae45b042d5f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "35499a94-b299-40ae-99c9-87222f1ed23c",
+            "Value": {
+                "id": "c307f7b9-9476-41fc-904f-2ad209ff3713",
+                "resourcePath": "objects\\obj_aviz_play_control\\obj_aviz_play_control.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -263,6 +287,14 @@
             }
         },
         {
+            "Key": "3f0d104a-42a9-4175-a67b-3c5bc4db6729",
+            "Value": {
+                "id": "baf1f48b-0ccf-466d-a68d-2996ae88ae73",
+                "resourcePath": "objects\\obj_aviz_demo3_spetrum\\obj_aviz_demo3_spetrum.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "40e8bc0b-cd72-48a0-b2f3-46a5a9caa160",
             "Value": {
                 "id": "abc5a314-a2a5-4648-93f1-50491dba971c",
@@ -287,11 +319,35 @@
             }
         },
         {
+            "Key": "467f8c8e-d442-4722-bb73-5b714ecd585a",
+            "Value": {
+                "id": "fe087e21-7ac6-461b-85e1-cb34e34980d2",
+                "resourcePath": "datafiles_yy\\music\\Chiptronical.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "46bc2b79-d62d-4159-9d3f-7073da56277c",
+            "Value": {
+                "id": "8cc5bd8d-4709-46c6-b493-b703300fdf62",
+                "resourcePath": "views\\46bc2b79-d62d-4159-9d3f-7073da56277c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4745855d-c7d0-4c92-83cd-d9d54aa02368",
             "Value": {
                 "id": "2888339c-3b0a-4df8-9af2-63e97354853a",
                 "resourcePath": "sprites\\u_cog\\u_cog.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "48b9b813-68fa-490a-869e-e12372a916db",
+            "Value": {
+                "id": "4739a96f-6084-4f4b-a379-fd6c489b509d",
+                "resourcePath": "rooms\\rm_aviz_demo0\\rm_aviz_demo0.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -311,6 +367,14 @@
             }
         },
         {
+            "Key": "4d73a530-fa8a-4378-9d93-8196487af926",
+            "Value": {
+                "id": "6c53156f-4b9f-4ba8-b60c-3a534db0537d",
+                "resourcePath": "objects\\obj_aviz_demo2_waveform\\obj_aviz_demo2_waveform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4e251475-853f-448c-aca4-c565de8e754d",
             "Value": {
                 "id": "9d6d0595-5a6f-494c-ba1d-4ec2efd8cb26",
@@ -324,6 +388,14 @@
                 "id": "6e9b52d9-a7ad-4bf4-9712-e46881465406",
                 "resourcePath": "sprites\\s_k7tape\\s_k7tape.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "513cff41-2721-421d-93c7-8e18a9ba7d53",
+            "Value": {
+                "id": "917e0f67-a2f7-428a-8a4f-d163ed8216a5",
+                "resourcePath": "objects\\obj_aviz_seek_control\\obj_aviz_seek_control.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -367,6 +439,14 @@
             }
         },
         {
+            "Key": "65818fdc-4e97-43a4-879f-650e244bd4be",
+            "Value": {
+                "id": "2e240453-9ccc-4a1d-a5bd-5490c65bc85e",
+                "resourcePath": "objects\\obj_aviz_stop_control\\obj_aviz_stop_control.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "67666db1-5dc0-4f9d-89fa-17321eeec91a",
             "Value": {
                 "id": "5b1bbbfa-2f60-43d6-aa74-9440b119dd97",
@@ -375,11 +455,27 @@
             }
         },
         {
+            "Key": "6769266e-ea8a-4b63-b26f-2ffafd6ca17d",
+            "Value": {
+                "id": "2c52ee9b-4c5e-44f5-af85-262c6198d531",
+                "resourcePath": "objects\\obj_demo_controls\\obj_demo_controls.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6a5b8fc0-db0c-481d-8651-8443f7108006",
             "Value": {
                 "id": "2423cf6c-c6ce-44d8-9413-fbe93f0a1031",
                 "resourcePath": "views\\6a5b8fc0-db0c-481d-8651-8443f7108006.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6b96859d-3823-476b-8983-1f6d20c1dd2d",
+            "Value": {
+                "id": "21040678-b685-47e5-a185-1ccbdb7b9aa1",
+                "resourcePath": "extensions\\audioviz2\\audioviz2.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -412,6 +508,14 @@
                 "id": "0e621721-0f2f-451e-a9e1-8fdd275a1873",
                 "resourcePath": "scripts\\scr_TextDisplay\\scr_TextDisplay.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "75a3f296-d76b-472f-b190-28a496e9284d",
+            "Value": {
+                "id": "556acbf2-8b6f-4609-a1f5-c8e643610ea1",
+                "resourcePath": "datafiles_yy\\Straw_Cowboys.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -543,6 +647,22 @@
             }
         },
         {
+            "Key": "8d6df7c1-1d52-4cbd-8d34-0ef68c3641ac",
+            "Value": {
+                "id": "fe4c62d4-be8f-4efe-ab12-8ebb6fb5a850",
+                "resourcePath": "datafiles_yy\\Blues.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "91f6e1e5-fe97-4f39-8cde-aa34c63f49fb",
+            "Value": {
+                "id": "2dfd000a-abc2-44a6-832c-4325c2d6f0c7",
+                "resourcePath": "notes\\LICENSE_audioviz2.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "9692265c-90bc-48a8-a007-fcfbbb9a593f",
             "Value": {
                 "id": "830b06f5-3462-4130-a529-44f372ecdce1",
@@ -612,6 +732,14 @@
                 "id": "2b01a004-e8e1-48a9-ab87-2a9af4d30cca",
                 "resourcePath": "views\\a97e3ec6-0593-4cd5-b70e-05f05285def1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ae4f71dd-0c18-406a-b22e-25362dd0e8d9",
+            "Value": {
+                "id": "2be29b00-6d06-497a-8fdf-24c03889355d",
+                "resourcePath": "notes\\LICENSE_kissfft.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -711,6 +839,14 @@
             }
         },
         {
+            "Key": "c0f47907-b25c-4e97-b0e0-7e230551f25d",
+            "Value": {
+                "id": "bb31f821-d0f7-4bef-8fda-74ec0e483f44",
+                "resourcePath": "objects\\obj_aviz_demo0_basic_player\\obj_aviz_demo0_basic_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c0f81dd2-3a78-4b46-8e90-efb10d9bfc0a",
             "Value": {
                 "id": "aa999243-f233-4c7c-b7ee-7101b3915f32",
@@ -732,6 +868,14 @@
                 "id": "4a0011f7-6ba6-48df-aafc-ebe5e29d3e0c",
                 "resourcePath": "scripts\\@__view_get\\__view_get.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c34c248a-ae92-4032-b37c-683fe487a3ff",
+            "Value": {
+                "id": "3b538b27-303b-4925-b1e8-3fb5979a5c00",
+                "resourcePath": "objects\\obj_aviz_demo1_buffer_player\\obj_aviz_demo1_buffer_player.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -855,6 +999,14 @@
             }
         },
         {
+            "Key": "d2c17fef-395f-4b2f-8bf5-ca654d9d5e99",
+            "Value": {
+                "id": "d13172ce-73af-4d6b-91bd-4d28cc7ca90c",
+                "resourcePath": "datafiles_yy\\Markalo_disco.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "d2c9a037-c10d-404c-bef6-c55219926b34",
             "Value": {
                 "id": "3e5ac9c9-2426-4a7c-9fd5-42eeeb2f5d71",
@@ -911,6 +1063,14 @@
             }
         },
         {
+            "Key": "da359fed-cb1d-4870-a9a7-21d3c1e8adbe",
+            "Value": {
+                "id": "c06b75a0-03c5-4aae-ac16-ec3dedef8698",
+                "resourcePath": "rooms\\rm_aviz_demo2\\rm_aviz_demo2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "da46d55e-bc5b-4748-a52a-be7ca9c7b041",
             "Value": {
                 "id": "0f23fa89-0798-4400-a57b-4be80395890a",
@@ -924,6 +1084,14 @@
                 "id": "8433cfee-11dc-4e61-985e-6bb9c5b5b9e1",
                 "resourcePath": "fonts\\f_code\\f_code.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "dea9a319-58f5-4114-b896-a748f0094641",
+            "Value": {
+                "id": "ad5c3abd-c45e-4237-91c8-e04b9c7da797",
+                "resourcePath": "notes\\LICENSE_libaudiodecoder.yy",
+                "resourceType": "GMNotes"
             }
         },
         {

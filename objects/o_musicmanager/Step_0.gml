@@ -14,6 +14,7 @@ if (global.music or global.forcemusic) {
 	} 
 
 	if (!is_playing) {
+		
 		event_user(4)
 	} else {
 	// every step, queue up another bit of audio

@@ -10,5 +10,8 @@ playmusic = 0;
 //__groups = 0;
 
 newmusiclist[0] = "music/Chiptronical.ogg";
+newmusiclist[1] = "music/Blues.ogg";
+
+currentmusic = pointer_null;
 
 event_user(10);

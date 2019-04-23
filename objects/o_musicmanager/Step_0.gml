@@ -14,7 +14,6 @@ if (global.music or global.forcemusic) {
 	} 
 
 	if (!is_playing) {
-		
 		event_user(4)
 	} else {
 	// every step, queue up another bit of audio
@@ -31,6 +30,12 @@ if (global.music or global.forcemusic) {
 		// show_debug_message("GOOD")
 	}
 	}
+	
+	if (currentmusic != newmusiclist[global.musicselect]) {
+		event_user(10);
+		currentmusic = newmusiclist[global.musicselect]
+	}
+	
 } else {
 	if (is_playing) {
 		event_user(3);

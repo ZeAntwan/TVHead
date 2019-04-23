@@ -658,7 +658,7 @@
             "Key": "8d6df7c1-1d52-4cbd-8d34-0ef68c3641ac",
             "Value": {
                 "id": "fe4c62d4-be8f-4efe-ab12-8ebb6fb5a850",
-                "resourcePath": "datafiles_yy\\Blues.ogg.yy",
+                "resourcePath": "datafiles_yy\\music\\Blues.ogg.yy",
                 "resourceType": "GMIncludedFile"
             }
         },

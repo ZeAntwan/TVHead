@@ -8,7 +8,7 @@
     "exportAction": 0,
     "exportDir": "",
     "fileName": "Blues.ogg",
-    "filePath": "datafiles",
+    "filePath": "datafiles\\music",
     "freeData": false,
     "origName": "",
     "overwrite": false,

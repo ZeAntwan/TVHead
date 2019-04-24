@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "03314428-b8ee-44a4-8376-6cf8d986941b",
+            "Value": {
+                "id": "d6632bb1-baa5-49cb-bb50-b9bf9c90194b",
+                "resourcePath": "datafiles_yy\\music\\mus_polo.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "052a201b-7e12-49d1-a853-ba17f9e82cf5",
             "Value": {
                 "id": "8e5db88b-ee36-48f7-8110-03d44e8c0296",
@@ -279,6 +287,14 @@
             }
         },
         {
+            "Key": "3d659df9-96e4-43f1-bbc2-f6e446856c92",
+            "Value": {
+                "id": "d13ae374-976b-45ee-a73f-bfc4776383c3",
+                "resourcePath": "extensions\\FMODGMS\\FMODGMS.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "3e1f8ec8-b65c-4429-910c-68ce820f95f2",
             "Value": {
                 "id": "b0f43c00-a9e0-4005-bb71-bbdfbc9cb991",
@@ -308,6 +324,14 @@
                 "id": "814e434c-f26e-4a8d-aab0-7a5cbbb0440c",
                 "resourcePath": "datafiles_yy\\MakeFMV.exe.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "439fed7c-07dd-4ce7-bd2e-aec095cfa5bf",
+            "Value": {
+                "id": "f8f344d1-93d1-44f3-a708-df95d384021a",
+                "resourcePath": "scripts\\FMODGMS_Snd_TagTypeToString\\FMODGMS_Snd_TagTypeToString.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -431,6 +455,14 @@
             }
         },
         {
+            "Key": "626cf929-5d14-4950-abc9-1f1c4334bce6",
+            "Value": {
+                "id": "9ea84e12-5e76-4a98-8a94-91a3e018ece9",
+                "resourcePath": "views\\626cf929-5d14-4950-abc9-1f1c4334bce6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "634c99ca-d278-4ca5-a782-10389388c561",
             "Value": {
                 "id": "60d1b1c3-d0fa-44dc-ad25-7d750bb60ddf",
@@ -500,6 +532,14 @@
                 "id": "98885cb6-f678-45a6-adfc-da52129182c2",
                 "resourcePath": "scripts\\@__init_global\\__init_global.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "72d01dc1-ffd8-46cb-a820-b619158f0130",
+            "Value": {
+                "id": "2fbf1921-230e-4783-a40b-8f58d3b33149",
+                "resourcePath": "notes\\compatibility_report_240419_251425142.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -687,6 +727,14 @@
             }
         },
         {
+            "Key": "99eced9e-ef13-453d-b044-14dbc604f4d3",
+            "Value": {
+                "id": "ec188e3b-65f5-4300-835e-2066b0777680",
+                "resourcePath": "scripts\\FMODGMS_Snd_TagDataTypeToString\\FMODGMS_Snd_TagDataTypeToString.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9a5b2b02-e5ba-4565-91da-bfd3f8bcc2be",
             "Value": {
                 "id": "c62fbaf5-8d3a-4591-9382-8f600bcc12fc",
@@ -700,6 +748,14 @@
                 "id": "1cfe366d-da35-4e82-9ecb-1dc6ce9b21cc",
                 "resourcePath": "datafiles_yy\\bg\\neon.fmv.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "9c9aa0b1-c5a7-493f-9dda-8ec704657883",
+            "Value": {
+                "id": "52b1978e-6dc0-4c37-8c40-2155140a388d",
+                "resourcePath": "scripts\\FMODGMS_Effect_TypeToString\\FMODGMS_Effect_TypeToString.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -719,11 +775,27 @@
             }
         },
         {
+            "Key": "a379a275-0d14-4ee8-97b5-d0ebc888b989",
+            "Value": {
+                "id": "3deda0af-fd4f-447f-8af4-ba4447eb1e18",
+                "resourcePath": "scripts\\FMODGMS_Util_SecondsToSamples\\FMODGMS_Util_SecondsToSamples.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a69ec30f-636c-4a37-bc52-b3b8eeeb7bf7",
             "Value": {
                 "id": "7bd3b691-8f54-4b10-ba6f-481c7eaaae50",
                 "resourcePath": "sprites\\bg_neon\\bg_neon.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a7016c50-4f20-4502-b18b-4489d7cebef9",
+            "Value": {
+                "id": "3dcc77d4-9fcf-45dc-8a3d-a10e17c425e3",
+                "resourcePath": "scripts\\FMODGMS_Util_BeatsToSamples\\FMODGMS_Util_BeatsToSamples.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -759,6 +831,14 @@
             }
         },
         {
+            "Key": "b06c3bcc-6018-4254-bf1f-245d2f98731c",
+            "Value": {
+                "id": "ec35837a-27d1-43b0-bdc3-ae43cfc008d9",
+                "resourcePath": "datafiles_yy\\music\\mus_wii.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "b1ab0a0d-702e-45c9-adc3-4c6ac2257d7b",
             "Value": {
                 "id": "f057dead-8c64-4acd-9670-b9bed4118d18",
@@ -788,6 +868,14 @@
                 "id": "a4ace908-36c5-4a68-83a2-594a3f632274",
                 "resourcePath": "datafiles_yy\\Edge_FMV_Reference_Guide.pdf.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "b38e0e08-fe12-437c-8767-71d0615a7a00",
+            "Value": {
+                "id": "af3cd08c-bb5c-4580-a4c7-a95d1279010a",
+                "resourcePath": "scripts\\FMODGMS_Snd_TypeToString\\FMODGMS_Snd_TypeToString.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -903,6 +991,14 @@
             }
         },
         {
+            "Key": "c6606967-a211-408f-bdbe-d7b880b12d50",
+            "Value": {
+                "id": "b78c5762-9688-4802-af9d-dea11ff2f5ca",
+                "resourcePath": "scripts\\FMODGMS_Util_SamplesToSeconds\\FMODGMS_Util_SamplesToSeconds.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c6648e76-632d-4f39-a63f-46354c4f7395",
             "Value": {
                 "id": "d76c6a8c-7926-4c27-a69a-243279b75fed",
@@ -932,6 +1028,14 @@
                 "id": "e8b64765-b1df-4e08-aebc-478e333b171c",
                 "resourcePath": "views\\cc3436f4-dd7a-4178-bb65-94940141975a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cc688b94-8707-430f-9b5d-068b1fd0c6b5",
+            "Value": {
+                "id": "da3bb991-f804-4cbd-8dd3-c6358e3f3d8e",
+                "resourcePath": "datafiles_yy\\music\\mus_ctr.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1167,6 +1271,14 @@
             }
         },
         {
+            "Key": "ed58c2a8-cfd7-43b1-b326-2a909d54d32c",
+            "Value": {
+                "id": "a4a5c0eb-0fe5-4ea0-a769-430f8decd22d",
+                "resourcePath": "scripts\\FMODGMS_Util_SamplesToBeats\\FMODGMS_Util_SamplesToBeats.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "edc5747d-61db-4795-bcc3-addb14d10f6e",
             "Value": {
                 "id": "8c7fb23a-2d46-4421-9285-62306f4e1f70",
@@ -1263,7 +1375,15 @@
         "0b614f1f-c743-4918-9860-5946aa7a485c",
         "c3040154-34ae-4d25-8fe6-b9667ac8a799",
         "67666db1-5dc0-4f9d-89fa-17321eeec91a",
-        "6eabba55-5c7a-4e18-9efb-3f5792405d35"
+        "6eabba55-5c7a-4e18-9efb-3f5792405d35",
+        "a7016c50-4f20-4502-b18b-4489d7cebef9",
+        "a379a275-0d14-4ee8-97b5-d0ebc888b989",
+        "c6606967-a211-408f-bdbe-d7b880b12d50",
+        "ed58c2a8-cfd7-43b1-b326-2a909d54d32c",
+        "b38e0e08-fe12-437c-8767-71d0615a7a00",
+        "99eced9e-ef13-453d-b044-14dbc604f4d3",
+        "439fed7c-07dd-4ce7-bd2e-aec095cfa5bf",
+        "9c9aa0b1-c5a7-493f-9dda-8ec704657883"
     ],
     "tutorial": ""
 }

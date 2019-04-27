@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "26ed3197-ccc7-43f4-8cb1-b16b58b94109",
+            "Value": {
+                "id": "11b728df-fbea-4705-9f80-7cc2136253a2",
+                "resourcePath": "datafiles_yy\\music\\mus_polo2.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "27b87086-96d1-4410-83c5-abdde377e8c9",
             "Value": {
                 "id": "9804a517-462e-4d08-b784-25abbfe8bad3",
@@ -1375,15 +1383,7 @@
         "0b614f1f-c743-4918-9860-5946aa7a485c",
         "c3040154-34ae-4d25-8fe6-b9667ac8a799",
         "67666db1-5dc0-4f9d-89fa-17321eeec91a",
-        "6eabba55-5c7a-4e18-9efb-3f5792405d35",
-        "a7016c50-4f20-4502-b18b-4489d7cebef9",
-        "a379a275-0d14-4ee8-97b5-d0ebc888b989",
-        "c6606967-a211-408f-bdbe-d7b880b12d50",
-        "ed58c2a8-cfd7-43b1-b326-2a909d54d32c",
-        "b38e0e08-fe12-437c-8767-71d0615a7a00",
-        "99eced9e-ef13-453d-b044-14dbc604f4d3",
-        "439fed7c-07dd-4ce7-bd2e-aec095cfa5bf",
-        "9c9aa0b1-c5a7-493f-9dda-8ec704657883"
+        "6eabba55-5c7a-4e18-9efb-3f5792405d35"
     ],
     "tutorial": ""
 }

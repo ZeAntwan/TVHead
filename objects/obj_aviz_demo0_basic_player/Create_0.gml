@@ -10,7 +10,7 @@
 // *********
 
 // create audio. At this point, ogg will be loaded into audioviz extension's memory
-ogg = aviz_create("Straw_Cowboys.ogg");
+ogg = aviz_create("music/mus_polo2.ogg");
 
 // get ogg metadata
 var samplerate = aviz_get_samplerate(ogg);

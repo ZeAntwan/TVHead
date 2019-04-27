@@ -1,7 +1,7 @@
 /// @description Fill audio queue
 
 var buff = buffer_create(buff_size, buffer_fixed, 1);
-var rendered_sample = aviz_tick(ogg, buffer_get_address(buff), 0, tick_size);
+rendered_sample = aviz_tick(ogg, buffer_get_address(buff), 0, tick_size);
 if (rendered_sample < 0) { // return would be 0 if track is done
 	buffer_delete(buff);
 	exit;

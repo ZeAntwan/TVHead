@@ -2,7 +2,11 @@
 
 var buff = buffer_create(buff_size, buffer_fixed, 1);
 var fft = buffer_create(fft_size, buffer_fixed, 1);
-var rendered_sample = aviz_tick(ogg, buffer_get_address(buff), buffer_get_address(fft), tick_size);
+rendered_sample = aviz_tick(ogg, buffer_get_address(buff), buffer_get_address(fft), tick_size);
+show_debug_message(rendered_sample)
+if (rendered_sample == 0) {
+	aviz_seek(ogg, 1)
+}
 if (rendered_sample < 0) { // return would be 0 if track is done
 	buffer_delete(buff);
 	exit;

@@ -26,7 +26,7 @@ if (global.music or global.forcemusic) {
 				// play mode, when the audio stops playing, force it to start again
 
 	if (not audio_is_playing(audio)) {
-		audio_play_sound(audio, 0, 0);
+		audio_play_sound(audio, 0, 1);
 		// show_debug_message("GOOD")
 	}
 	}
@@ -52,7 +52,3 @@ if (global.musicstop == true) {
 	global.musicstop = false;
 }
 
-
-if (is_playing) {
-
-}

@@ -9,7 +9,7 @@ global.musicselect = 0;
 playmusic = 0;
 //__groups = 0;
 
-newmusiclist[0] = "music/Chiptronical.ogg";
+newmusiclist[0] = "music/mus_polo2.ogg";
 newmusiclist[1] = "music/Blues.ogg";
 
 currentmusic = pointer_null;

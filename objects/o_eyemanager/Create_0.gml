@@ -8,6 +8,8 @@ chars_drawn = 0;
 // 2 : Mouse
 global.controlmode = 0;
 
+global.eyecontrol = true;
+
 // Draw eyes
 global.eyedraw = true;
 global.eyeleft = true;

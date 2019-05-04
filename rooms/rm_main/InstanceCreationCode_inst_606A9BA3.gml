@@ -1,0 +1,1 @@
+global.emoteeye = 0;

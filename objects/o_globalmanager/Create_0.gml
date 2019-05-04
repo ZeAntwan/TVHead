@@ -16,7 +16,7 @@ global.forcebgstop = false;
 
 // Music
 global.forcemusic = false;
-global.musicstop = false;
+global.soundstop = false;
 
 // Screen vars
 global.screenw = 1280;

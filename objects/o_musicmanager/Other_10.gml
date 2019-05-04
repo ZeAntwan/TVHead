@@ -3,7 +3,7 @@
 var buff = buffer_create(buff_size, buffer_fixed, 1);
 var fft = buffer_create(fft_size, buffer_fixed, 1);
 rendered_sample = aviz_tick(ogg, buffer_get_address(buff), buffer_get_address(fft), tick_size);
-show_debug_message(rendered_sample)
+// show_debug_message(rendered_sample)
 if (rendered_sample == 0) {
 	aviz_seek(ogg, 1)
 }

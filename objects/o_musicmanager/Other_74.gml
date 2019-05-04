@@ -47,3 +47,5 @@ if (async_load[? "queue_id"] == audio) {
 		buffer_delete(fft_buff); // we're free to delete this one
 	}
 }
+
+// show_debug_message(fft_buckets);

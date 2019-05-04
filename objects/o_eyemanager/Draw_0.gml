@@ -128,7 +128,13 @@ if (global.emoteeye == 5) {
 
 // Tape 
 if (global.emoteeye == 6) {
-	taperot+=1.5
+	if(global.music or global.emotemusic or global.forcemusic) {
+		if (instance_exists(o_musicmanager)) {
+			if !o_musicmanager.is_paused {taperot-=1.5}
+		} else {
+			taperot-=1.5
+		}
+	}
 	taped = 1.5*eyesize;
 	tapew = taped-20;
 	

@@ -1,17 +1,19 @@
 global.music = false;
 
-maxmus = 4;
-
-for (var i=0; i<maxmus;i++) musiclist[i] = i;
-
 global.musicselect = 0;
 
 playmusic = 0;
 //__groups = 0;
 
-newmusiclist[0] = "music/mus_polo2.ogg";
-newmusiclist[1] = "music/Blues.ogg";
+musiclist[0] = "music/Jake Kaufman - Mighty Switch Force 2 OST - 10 The Afterblaze.ogg";
+musiclist[1] = "music/Jake Kaufman - Mighty Switch Force 2 OST - 15 Credits (Rescue Girl).ogg";
 
 currentmusic = pointer_null;
 
 event_user(10);
+
+animspeed = .05
+animwait = 5*room_speed;
+
+animation = 0;
+animchange = false;

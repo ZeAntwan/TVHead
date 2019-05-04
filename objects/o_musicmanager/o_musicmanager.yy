@@ -35,16 +35,6 @@
             "m_owner": "177a249b-831e-4243-bff6-0d89f8b65951"
         },
         {
-            "id": "83fd9c03-0b86-49b9-9a62-242fb063b7be",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "177a249b-831e-4243-bff6-0d89f8b65951"
-        },
-        {
             "id": "1c5906b2-dc6a-41c6-a2dc-c4368547ae87",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -123,12 +113,42 @@
             "enumb": 20,
             "eventtype": 7,
             "m_owner": "177a249b-831e-4243-bff6-0d89f8b65951"
+        },
+        {
+            "id": "d9077bfc-8cfb-47ef-8db1-d24542743bb7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 15,
+            "eventtype": 7,
+            "m_owner": "177a249b-831e-4243-bff6-0d89f8b65951"
+        },
+        {
+            "id": "53c60454-f073-4bd2-be73-cd46a3b51fa6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 16,
+            "eventtype": 7,
+            "m_owner": "177a249b-831e-4243-bff6-0d89f8b65951"
+        },
+        {
+            "id": "8f772461-9daf-4874-b081-330bc3378a31",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "177a249b-831e-4243-bff6-0d89f8b65951"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

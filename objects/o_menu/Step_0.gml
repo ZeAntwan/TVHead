@@ -109,8 +109,16 @@ if (global.showmenu) {
 		break;
 		
 		case 9:
-			if (instance_exists(o_musicmanager)) {
-				optiontext = string(audio_get_name(o_musicmanager.musiclist[global.musicselect]));
+			if (instance_exists(o_emotemusic)) {
+				optiontext = string(audio_get_name(o_emotemusic.emotemusiclist[global.emotemusicselect]));
+				if (sright) {
+					global.emotemusicselect++;
+				}
+				if (sleft) {
+					global.emotemusicselect--;
+				}
+			} else if (instance_exists(o_musicmanager)) {
+				optiontext = string_replace(o_musicmanager.musiclist[global.musicselect],"music/","");
 				if (sright) {
 					global.musicselect++;
 				}

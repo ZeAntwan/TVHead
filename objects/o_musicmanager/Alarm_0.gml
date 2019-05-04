@@ -1,3 +1,3 @@
-/// @description Stop All Music
-show_message("Alarm")
-//audio_stop_all();
+/// @description Reverse Anim
+animchange = false;
+show_debug_message("ALARM")

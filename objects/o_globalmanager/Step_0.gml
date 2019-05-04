@@ -14,3 +14,9 @@ if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
 		if (room != room_last) room_goto_next();
 	}
 }
+
+if (global.soundstop == true) {
+	global.emotemusic = false;
+	global.forcemusic = false;
+	global.soundstop = false;
+}

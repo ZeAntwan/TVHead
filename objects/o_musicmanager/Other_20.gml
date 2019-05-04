@@ -1,4 +1,4 @@
-/// @description Insérez la description ici
+/// @description Init Track
 // ********
 // Waveforme visualize demo
 // This demo plays audio in the same way as demo 1 but instead of providing seek controls
@@ -7,7 +7,7 @@
 // CREDITS: Royalty free music by Patrick de Arteaga: https://patrickdearteaga.com/royalty-free-music/
 // *********
 // create audio. At this point, ogg will be loaded into memory
-ogg = aviz_create(newmusiclist[global.musicselect]);
+ogg = aviz_create(musiclist[global.musicselect]);
 
 // get ogg metadata
 var samplerate = aviz_get_samplerate(ogg);
@@ -40,11 +40,11 @@ buffer_map = ds_map_create();
 
 // calculate the size of "ffts"
 fft_size = 4*tick_size/2;
-fft_buckets = floor(tick_size/2);
+fft_buckets = floor(tick_size/3);
 fft_map = ds_map_create();
 
 // initialize simple visualisation bars
-bars = 20;
+bars = 25;
 for (var i=bars-1; i>=0; i--) {
 	bargraph[i] = 0;
 }

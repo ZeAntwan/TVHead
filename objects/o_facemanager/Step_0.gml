@@ -107,7 +107,7 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 		if(global.emoteeye == 7) {global.emoteeye = 0} else {
 			global.emoteeye = 7
 			// SFX
-			global.musicstop = true;
+			global.soundstop = true;
 			if (!audio_is_playing(sfx_brb) and !sfxplayed) {
 				audio_play_sound(sfx_brb,15,false);
 				sfxplayed = true;

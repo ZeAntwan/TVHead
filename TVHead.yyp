@@ -199,14 +199,6 @@
             }
         },
         {
-            "Key": "26ed3197-ccc7-43f4-8cb1-b16b58b94109",
-            "Value": {
-                "id": "11b728df-fbea-4705-9f80-7cc2136253a2",
-                "resourcePath": "datafiles_yy\\music\\mus_polo2.ogg.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "27b87086-96d1-4410-83c5-abdde377e8c9",
             "Value": {
                 "id": "9804a517-462e-4d08-b784-25abbfe8bad3",
@@ -351,14 +343,6 @@
             }
         },
         {
-            "Key": "467f8c8e-d442-4722-bb73-5b714ecd585a",
-            "Value": {
-                "id": "fe087e21-7ac6-461b-85e1-cb34e34980d2",
-                "resourcePath": "datafiles_yy\\music\\Chiptronical.ogg.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "46bc2b79-d62d-4159-9d3f-7073da56277c",
             "Value": {
                 "id": "8cc5bd8d-4709-46c6-b493-b703300fdf62",
@@ -396,6 +380,14 @@
                 "id": "0d72fb8b-1def-44d2-8e9f-43886fb3a851",
                 "resourcePath": "fonts\\f_mainlarge\\f_mainlarge.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "4c165310-a180-4b82-aec3-5eebd07b4572",
+            "Value": {
+                "id": "320a9825-8c1f-4048-974a-5b1b6ac4f526",
+                "resourcePath": "datafiles_yy\\music\\Jake Kaufman - Mighty Switch Force 2 OST - 15 Credits (Rescue Girl).ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -484,6 +476,14 @@
                 "id": "2e240453-9ccc-4a1d-a5bd-5490c65bc85e",
                 "resourcePath": "objects\\obj_aviz_stop_control\\obj_aviz_stop_control.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "65cc6f40-a3ef-4c52-a93f-623d1e81f0a5",
+            "Value": {
+                "id": "7f425999-5779-4a86-96cf-9e1803784f24",
+                "resourcePath": "fonts\\f_mainnoaa\\f_mainnoaa.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -695,19 +695,19 @@
             }
         },
         {
+            "Key": "8a27cd1f-66d7-459c-9859-ea37fd102e6b",
+            "Value": {
+                "id": "51fa8e53-fcdb-4c22-865c-8924d3576c95",
+                "resourcePath": "rooms\\rm_music\\rm_music.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8cba7bf1-2aa2-4704-bc0a-1ee98382842a",
             "Value": {
                 "id": "da926b59-bc81-4110-9f34-3cd467e2c7a2",
                 "resourcePath": "objects\\o_skinmanager\\o_skinmanager.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "8d6df7c1-1d52-4cbd-8d34-0ef68c3641ac",
-            "Value": {
-                "id": "fe4c62d4-be8f-4efe-ab12-8ebb6fb5a850",
-                "resourcePath": "datafiles_yy\\music\\Blues.ogg.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -772,6 +772,14 @@
                 "id": "7890f153-5547-440a-ad26-f9ac0f7a0706",
                 "resourcePath": "views\\9f43d5d1-e84f-4728-b98e-6bf21ca7e1d4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9f6d3184-262d-497b-afd4-5f5da3cb9d18",
+            "Value": {
+                "id": "27662c26-e658-411d-adf5-2664cb9a7278",
+                "resourcePath": "objects\\o_emotemusic\\o_emotemusic.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1012,6 +1020,14 @@
                 "id": "d76c6a8c-7926-4c27-a69a-243279b75fed",
                 "resourcePath": "rooms\\rm_main\\rm_main.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c902882b-1126-40ca-b7cc-f1661a0184fd",
+            "Value": {
+                "id": "9c412da9-8e26-4e43-a26a-a9a9213dc436",
+                "resourcePath": "datafiles_yy\\music\\Jake Kaufman - Mighty Switch Force 2 OST - 10 The Afterblaze.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

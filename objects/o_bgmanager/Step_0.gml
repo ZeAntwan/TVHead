@@ -22,7 +22,12 @@ if (instance_exists(o_eyemanager)) {
 		case 7: target_color = c_orange; bg_anim = false; break;
 		}
 	}
+	
+	tint_color = merge_color(tint_color,target_color,0.2)
+
+} else {
+	tint_color = c_white;
 }
 
 if (global.forcebgstop) {bg_anim = false;};
-tint_color = merge_color(tint_color,target_color,0.2)	
+//tint_color = merge_color(tint_color,target_color,0.2)	

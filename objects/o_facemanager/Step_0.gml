@@ -84,8 +84,8 @@ if (!gamepad_button_check(0,gp_shoulderl)) {
 			global.emoteeye = 4
 			// SFX
 			//global.musicstop = true;
-			if (!audio_is_playing(s_1up) and !sfxplayed) {
-				audio_play_sound(s_1up,15,false);
+			if (!audio_is_playing(sfx_1up) and !sfxplayed) {
+				audio_play_sound(sfx_1up,15,false);
 				sfxplayed = true;
 			};
 		};

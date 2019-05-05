@@ -1,10 +1,12 @@
 /// @description Insert description here
 
 bg_array = [
-sprite_index,
+bg_black,
 bg_vid,
 bg_laia,
-bg_neon
+bg_neon,
+bg_under,
+bg_blue
 ];
 
 vid_array = [

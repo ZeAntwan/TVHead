@@ -140,8 +140,8 @@ if (global.eyecontrol) {
 			if(global.emoteeye == 4) {global.emoteeye = 0} else {
 				global.emoteeye = 4
 				// SFX
-				if (!audio_is_playing(s_1up) and !sfxplayed) {
-					audio_play_sound(s_1up,15,false);
+				if (!audio_is_playing(sfx_1up) and !sfxplayed) {
+					audio_play_sound(sfx_1up,15,false);
 					sfxplayed = true;
 				};
 			};

@@ -7,7 +7,7 @@ outline = 10;
 draw_set_halign(fa_center);
 draw_set_font(f_mainnoaa);
 
-if (animation != 0 && global.music) {
+if (animation != 0 and (global.music or global.forcemusic)) {
 	draw_rectangle(
 		(infoX-(string_width(string(currentmusic))*(0.5*animation))-outline*animation),
 		infoY-outline,
@@ -18,7 +18,4 @@ if (animation != 0 && global.music) {
 	draw_set_blend_mode(bm_subtract);
 	draw_text(infoX, infoY, string(currentmusic))
 }
-
-
-
-
+draw_set_blend_mode(bm_normal)

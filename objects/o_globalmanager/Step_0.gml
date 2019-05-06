@@ -1,6 +1,6 @@
 /// @description Debug Controls + Overall controls
 // Secondary Controls (LB + Dpad)
-if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
+if (!global.showmenu and (gamepad_button_check(0,gp_shoulderl)) or keyboard_check(ord("D"))) {
 	if (gamepad_button_check_pressed(0, gp_padd)) {
 		global.bgindex--
 	}
@@ -14,8 +14,8 @@ if (!global.showmenu and gamepad_button_check(0,gp_shoulderl)) {
 		if (room != room_last) room_goto_next();
 	}
 	
-		// Toggle BSOD
-	if (gamepad_button_check_pressed(0, gp_stickl)) {
+	// Toggle BSOD
+	if (gamepad_button_check_pressed(0, gp_stickl) or keyboard_check_pressed(ord("B"))) {
 		room_goto(rm_bsod);
 	}
 }

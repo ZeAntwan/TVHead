@@ -42,6 +42,10 @@ if(!global.forcemusic and !global.music) {
 	//event_user(EVENT_STOP);
 }
 
+#endregion
+
+#region Track Control
+
 if (animchange) {
 	if animation >= 1 {
 		if (alarm[0] == -1) {
@@ -56,10 +60,6 @@ if (animchange) {
 		animation -= animspeed
 	}
 }
-
-#endregion
-
-#region Track Control
 
 // South
 if (gamepad_button_check_pressed(0, gp_face1)) {

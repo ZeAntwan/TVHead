@@ -1,5 +1,7 @@
 /// @description Set variables and generate random
 
+costime = 0;
+
 // Error Sound
 audio_play_sound(sfx_error,10,false);
 
@@ -14,13 +16,14 @@ errortypes = [
 
 ]
 
-errormsg = @"This
-is
-a
-multiple
-line
-test
-"
+errorcode = "0x0000001A"
+
+errormsg = @"A fatal exception has occured at 0x73747566660d0a. The current process has been shut down to prevent damage to your computer.
+
+* If this is the first time you've seen this stop error screen, restart your computer.
+
+    Technical information:
+    *** STOP : 0x0000001A";
 
 switch date_get_weekday(date_current_datetime()) {
 	case 0 : currentday = "Mon"

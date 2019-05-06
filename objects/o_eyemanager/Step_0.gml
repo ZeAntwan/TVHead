@@ -155,7 +155,7 @@ if (global.eyecontrol) {
 
 		// B "?"
 		if (gamepad_button_check_pressed(0, gp_face2)) {
-			if(global.emoteeye == 6) {global.emoteeye = 0; global.music = false} else {global.emoteeye = 6; global.music = true};
+			if(global.emoteeye == 6) {global.emoteeye = 0; global.emotemusic = false} else {global.emoteeye = 6; global.emotemusic = true};
 		}
 
 		// X "Code"

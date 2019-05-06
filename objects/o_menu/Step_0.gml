@@ -18,8 +18,15 @@ if (keyboard_check_pressed(ord("F"))) {
 
 // Menu items
 if (global.showmenu) {
-	if (keyboard_check_pressed(vk_up) or (gamepad_button_check_pressed(0,gp_padu))) {select++}
-	if (keyboard_check_pressed(vk_down) or (gamepad_button_check_pressed(0,gp_padd))) {select--}
+	if (keyboard_check_pressed(vk_up) or (gamepad_button_check_pressed(0,gp_padu))) {
+		select++;
+		if (select > array_length_1d(options)-1) select = 0;
+	}
+	if (keyboard_check_pressed(vk_down) or (gamepad_button_check_pressed(0,gp_padd))) {
+		select--;
+		if (select < 0) select = array_length_1d(options)-1;
+	}
+	
 	select = clamp(select,0,array_length_1d(options)-1);
 	
 	switch (select) {

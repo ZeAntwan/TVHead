@@ -4,6 +4,7 @@
 if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.1);
 
 // Eye state setup
+global.controlmode = 0;
 // Eye Mood
 global.emoteeye = 0;
 global.eyemood = 0;
@@ -17,6 +18,9 @@ global.forcebgstop = false;
 // Music
 global.forcemusic = false;
 global.soundstop = false;
+global.music = false;
+global.emotemusic = false;
+
 
 // Screen vars
 global.screenw = 1280;

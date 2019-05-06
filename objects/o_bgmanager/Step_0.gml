@@ -2,7 +2,10 @@
 global.bgindex = clamp(global.bgindex,0,array_length_1d(bg_array)-1)
 
 //
-usesprite = bg_array[global.bgindex];
+if (usesprite != bg_array[global.bgindex]) {
+	audio_play_sound(sfx_bgchange,10,false)
+	usesprite = bg_array[global.bgindex];
+}
 
 // Mood Change
 if (instance_exists(o_eyemanager)) {

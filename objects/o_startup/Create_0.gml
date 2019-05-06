@@ -34,5 +34,4 @@ Reticulating Splines          
 .
 .
 .
-.
 SYSTEM READY"

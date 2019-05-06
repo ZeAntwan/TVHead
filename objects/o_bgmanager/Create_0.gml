@@ -9,6 +9,8 @@ bg_under,
 bg_blue
 ];
 
+usesprite = bg_array[global.bgindex]
+
 vid_array = [
 noone,
 "neon"

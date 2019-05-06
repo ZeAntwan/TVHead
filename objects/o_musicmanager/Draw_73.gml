@@ -16,6 +16,6 @@ if (animation != 0 and (global.music or global.forcemusic)) {
 		false
 	);
 	draw_set_blend_mode(bm_subtract);
-	draw_text(infoX, infoY, string(currentmusic))
+	draw_text(infoX, infoY, string_replace(currentmusic,".ogg",""))
 }
 draw_set_blend_mode(bm_normal)

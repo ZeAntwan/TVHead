@@ -4,10 +4,9 @@
 // This demo plays audio in the same way as demo 1 but instead of providing seek controls
 // renders a visualization of the audio
 //
-// CREDITS: Royalty free music by Patrick de Arteaga: https://patrickdearteaga.com/royalty-free-music/
 // *********
 // create audio. At this point, ogg will be loaded into memory
-ogg = aviz_create(musiclist[global.musicselect]);
+ogg = aviz_create("music/" + musiclist[global.musicselect]);
 
 // get ogg metadata
 var samplerate = aviz_get_samplerate(ogg);

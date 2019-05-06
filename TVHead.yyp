@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "03314428-b8ee-44a4-8376-6cf8d986941b",
-            "Value": {
-                "id": "d6632bb1-baa5-49cb-bb50-b9bf9c90194b",
-                "resourcePath": "datafiles_yy\\music\\mus_polo.ogg.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "046cf55a-2fda-4099-ad92-82e6d2179d21",
             "Value": {
                 "id": "f8c7d653-2e26-43ae-93a9-3dcd5fe56548",
@@ -279,14 +271,6 @@
             }
         },
         {
-            "Key": "3b6fc608-a014-4820-a25e-064d94f02f08",
-            "Value": {
-                "id": "4024471d-1e3b-4a7a-b75f-dd2fbfd8ccb4",
-                "resourcePath": "views\\3b6fc608-a014-4820-a25e-064d94f02f08.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "3e1f8ec8-b65c-4429-910c-68ce820f95f2",
             "Value": {
                 "id": "b0f43c00-a9e0-4005-bb71-bbdfbc9cb991",
@@ -308,14 +292,6 @@
                 "id": "abc5a314-a2a5-4648-93f1-50491dba971c",
                 "resourcePath": "scripts\\scr_showOptionInfo\\scr_showOptionInfo.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "421997d3-ce75-4d2c-9d21-5d8583396e20",
-            "Value": {
-                "id": "814e434c-f26e-4a8d-aab0-7a5cbbb0440c",
-                "resourcePath": "datafiles_yy\\MakeFMV.exe.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -364,14 +340,6 @@
                 "id": "69948750-78a0-45ac-842a-b154159cbca5",
                 "resourcePath": "sprites\\bg_blue\\bg_blue.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "4ab9b472-0fd2-4f8b-973c-804fcb875df0",
-            "Value": {
-                "id": "90214430-bdba-4777-af82-f51b48a43eec",
-                "resourcePath": "views\\4ab9b472-0fd2-4f8b-973c-804fcb875df0.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -572,14 +540,6 @@
                 "id": "d38f91bf-d70a-4186-83bb-1a88f681118b",
                 "resourcePath": "sprites\\s_close\\s_close.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "75a3f296-d76b-472f-b190-28a496e9284d",
-            "Value": {
-                "id": "556acbf2-8b6f-4609-a1f5-c8e643610ea1",
-                "resourcePath": "datafiles_yy\\Straw_Cowboys.ogg.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -895,22 +855,6 @@
             }
         },
         {
-            "Key": "b06c3bcc-6018-4254-bf1f-245d2f98731c",
-            "Value": {
-                "id": "ec35837a-27d1-43b0-bdc3-ae43cfc008d9",
-                "resourcePath": "datafiles_yy\\music\\mus_wii.ogg.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
-            "Key": "b1ab0a0d-702e-45c9-adc3-4c6ac2257d7b",
-            "Value": {
-                "id": "f057dead-8c64-4acd-9670-b9bed4118d18",
-                "resourcePath": "extensions\\GML_Video_Player_Edge_Engine\\GML_Video_Player_Edge_Engine.yy",
-                "resourceType": "GMExtension"
-            }
-        },
-        {
             "Key": "b230fae7-3344-41bb-be3b-38615af4bad2",
             "Value": {
                 "id": "de31f150-ce9f-488d-a660-1bdb56274bef",
@@ -932,14 +876,6 @@
                 "id": "f4b2bf5e-2937-45a1-b1e0-61a4795c73ab",
                 "resourcePath": "fonts\\f_courierstrong\\f_courierstrong.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "b3711ef2-df99-43c7-8762-fc6ad553f525",
-            "Value": {
-                "id": "a4ace908-36c5-4a68-83a2-594a3f632274",
-                "resourcePath": "datafiles_yy\\Edge_FMV_Reference_Guide.pdf.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1103,14 +1039,6 @@
             }
         },
         {
-            "Key": "cc688b94-8707-430f-9b5d-068b1fd0c6b5",
-            "Value": {
-                "id": "da3bb991-f804-4cbd-8dd3-c6358e3f3d8e",
-                "resourcePath": "datafiles_yy\\music\\mus_ctr.ogg.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "de5dfaa6-92d0-4c14-9221-1882377139cd",
@@ -1143,14 +1071,6 @@
             }
         },
         {
-            "Key": "cedf3291-e2be-480e-a37e-56a73ac36cb0",
-            "Value": {
-                "id": "64e99771-2743-4fc0-9f6f-d0a558cbe9af",
-                "resourcePath": "rooms\\edgefmv_demo\\edgefmv_demo.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "cefe34fd-4b3d-4a5a-a82b-44abc707de8d",
             "Value": {
                 "id": "47cbfbd8-9750-4758-88fd-301cd2136cac",
@@ -1180,22 +1100,6 @@
                 "id": "606a27bd-a2f9-462c-84b7-d65c39a5f176",
                 "resourcePath": "timelines\\tm_animation\\tm_animation.yy",
                 "resourceType": "GMTimeline"
-            }
-        },
-        {
-            "Key": "d2c17fef-395f-4b2f-8bf5-ca654d9d5e99",
-            "Value": {
-                "id": "d13172ce-73af-4d6b-91bd-4d28cc7ca90c",
-                "resourcePath": "datafiles_yy\\Markalo_disco.ogg.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
-            "Key": "d2c9a037-c10d-404c-bef6-c55219926b34",
-            "Value": {
-                "id": "3e5ac9c9-2426-4a7c-9fd5-42eeeb2f5d71",
-                "resourcePath": "datafiles_yy\\Demo\\thinkboxly-logo.fmv.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1356,22 +1260,6 @@
                 "id": "5c0ce83f-0cad-4e61-acb9-7bef8cdfe349",
                 "resourcePath": "sounds\\sfx_error\\sfx_error.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "edc5747d-61db-4795-bcc3-addb14d10f6e",
-            "Value": {
-                "id": "8c7fb23a-2d46-4421-9285-62306f4e1f70",
-                "resourcePath": "datafiles_yy\\Demo\\video_converted.fmv.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
-            "Key": "ee7d114f-be4a-4401-a9b5-d74952ba48ff",
-            "Value": {
-                "id": "dbc3fc16-28de-444d-94fa-c99556d1cb1f",
-                "resourcePath": "views\\ee7d114f-be4a-4401-a9b5-d74952ba48ff.yy",
-                "resourceType": "GMFolder"
             }
         },
         {

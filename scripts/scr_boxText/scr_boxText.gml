@@ -1,7 +1,7 @@
 /// @description Create a text box with a substrated text
 /// @param {real} x
 /// @param {real} y
-/// @param {real} outline
+/// @param {real} border
 /// @param {string} string
 /// @param {string} [alignement]
 /// @param {bool} [outline]

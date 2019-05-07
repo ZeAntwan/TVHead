@@ -2,16 +2,23 @@ global.music = false;
 
 global.musicselect = 0;
 
+// create the audio controls
+is_playing = false;
+is_paused = false;
+
 playmusic = 0;
 //__groups = 0;
+error = false;
 
 musiclist[0] = file_find_first("music/*.ogg",0);
-var nextsong = file_find_next();
-
-for (var i = 1; nextsong != ""; i++) {
-	musiclist[i] = nextsong;
-	show_debug_message(string(i) + " : " + musiclist[i]);
-	nextsong = file_find_next();
+if (musiclist[0] != "") {
+	var nextsong = file_find_next();
+	for (var i = 1; nextsong != ""; i++) {
+		musiclist[i] = nextsong;
+		nextsong = file_find_next();
+	}
+} else {
+	error = true;
 }
 
 
@@ -20,10 +27,18 @@ for (var i = 1; nextsong != ""; i++) {
 
 currentmusic = pointer_null;
 
-event_user(10);
+
+
+if (musiclist[0] != "") {
+	event_user(10);
+}
 
 animspeed = .05
 animwait = 5*room_speed;
 
 animation = 0;
 animchange = false;
+
+infoX = room_width/2;
+infoY = room_height*.85;
+outline = 10;

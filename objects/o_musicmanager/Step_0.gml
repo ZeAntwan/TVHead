@@ -2,6 +2,7 @@
 
 global.musicselect = clamp(global.musicselect,0,array_length_1d(musiclist)-1);
 
+if (!error) {
 #region Music Play
 if (global.music or global.forcemusic) {
 	
@@ -37,9 +38,10 @@ if (global.music or global.forcemusic) {
 	animchange = false;
 	animation = 0;
 }
+
 if(!global.forcemusic and !global.music) {
 	audio_stop_sound(playmusic);
-	//event_user(EVENT_STOP);
+	event_user(EVENT_STOP);
 }
 
 #endregion
@@ -104,3 +106,5 @@ if (!global.showmenu) {
 }
 
 #endregion
+
+}

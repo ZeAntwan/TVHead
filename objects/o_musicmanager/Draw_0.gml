@@ -17,3 +17,10 @@ if (is_playing) {
 	}
 }
 draw_set_alpha(1)
+
+draw_set_blend_mode(bm_normal)
+
+if (error) {
+	draw_sprite_ext(s_error,0,room_width/2,room_height/2,3,3,0,c_red,.2);
+	scr_boxText(infoX,infoY,outline,"No .ogg files found in music folder", fa_center, true)
+}

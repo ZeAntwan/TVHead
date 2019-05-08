@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "c94dfbb7-6ebd-4239-889e-7434cf13542b",
+            "Value": {
+                "id": "bf85dd4c-8097-4143-8bcf-90a26ef0818b",
+                "resourcePath": "sprites\\bg_party\\bg_party.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ca07f33e-91a5-4b7b-a081-0bd2566fb332",
             "Value": {
                 "id": "18edfb89-960a-419b-afb3-8e1e564c7c3d",
@@ -1283,6 +1291,14 @@
             "Value": {
                 "id": "327134b6-0429-4928-9746-63cf0dd6dfd1",
                 "resourcePath": "sprites\\u_bsod\\u_bsod.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f6629646-2bea-42b8-853b-a82be44e438f",
+            "Value": {
+                "id": "18f73dda-6931-44b2-b854-dceb952a4a53",
+                "resourcePath": "sprites\\bg_diamond\\bg_diamond.yy",
                 "resourceType": "GMSprite"
             }
         },

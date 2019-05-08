@@ -40,3 +40,7 @@ tint_color = base_color;
 target_color = base_color;
 
 bg_anim = true;
+
+bg_channelswitch = false;
+bg_switchanim = 0;
+bg_switchanimspd = .01*room_speed;

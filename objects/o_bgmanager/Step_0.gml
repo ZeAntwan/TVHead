@@ -2,9 +2,18 @@
 global.bgindex = clamp(global.bgindex,0,array_length_1d(bg_array)-1)
 
 //
-if (usesprite != bg_array[global.bgindex]) {
+if (usesprite != bg_array[global.bgindex] && !bg_channelswitch) {
 	audio_play_sound(sfx_bgchange,10,false)
-	usesprite = bg_array[global.bgindex];
+	bg_channelswitch = true;
+}
+
+if (bg_channelswitch) {
+	if (bg_switchanim >= 1) {
+		bg_channelswitch = false;
+		usesprite = bg_array[global.bgindex];
+		bg_switchanim = 0
+		}
+	bg_switchanim += bg_switchanimspd;
 }
 
 // Mood Change

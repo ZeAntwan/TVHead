@@ -27,23 +27,25 @@ if (outangle) {
 		if (j == 13) j = 1;
 		if (i <= dir+360/24 and dir+360/24 <= i+360/12) {subimg = j} 
 		
-		if (global.debugmode) {
-			var _xx = dx + lengthdir_x(150, i+360/24);
-			var _yy = dy + lengthdir_y(150, i+360/24);
-			draw_line(dx,dy,_xx,_yy);
-		}
 		j++;
 	}
 } else {
 	subimg = 0
 }
 
+if (global.debugmode) {
+	for (var i = 0; i <= 360; i+=360/12) {
+		var _xx = dx + lengthdir_x(150, i+360/24);
+		var _yy = dy + lengthdir_y(150, i+360/24);
+		draw_line(dx,dy,_xx,_yy);
+		draw_circle(dx,dy,eyeradius/2,true)
+	}
+}
+
 // Change Sprite depending on mood
-sprite_index = osprite;
 
 switch global.eyemood {
 	case 1:
-		sprite_index = s_face2;
 		posbounce = true;
 		//sizebounce = true;
 	break;

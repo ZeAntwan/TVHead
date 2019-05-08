@@ -8,6 +8,10 @@ rvaxis = gamepad_axis_value(0,gp_axisrv);
 rtaxis = gamepad_button_value(0, gp_shoulderrb)
 ltaxis = gamepad_button_value(0, gp_shoulderlb)
 
+// Face skin
+global.eyeskin = clamp(global.eyeskin, 0, array_length_1d(face_array)-1);
+if (sprite_index != face_array[global.eyeskin]) {sprite_index = face_array[global.eyeskin]}
+
 // Global Face Movement 
 x = lerp(x, dx + lhaxis*(eyeradius*1.5),eyesmooth);
 y = lerp(y, dy + lvaxis*eyeradius,eyesmooth);

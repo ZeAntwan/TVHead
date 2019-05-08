@@ -1,5 +1,12 @@
 /// @description Set variables and generate random
 
+if (instance_exists(o_bgmanager)) {
+	with(o_bgmanager) {
+		event_user(0)
+	}
+}
+
+
 costime = 0;
 
 // Error Sound

@@ -7,9 +7,14 @@ chars_drawn = 0;
 // 1 : 1 Eye per stick
 global.controlmode = 0;
 
+face_array = [
+	f_normal,
+	f_harold,
+	f_alt
+]
+
 //// Var Setup
 // Sprite
-osprite = sprite_index;
 salpha = 1;
 size = .5
 

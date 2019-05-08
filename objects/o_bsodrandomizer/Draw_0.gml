@@ -1,5 +1,17 @@
 /// @description Insérez la description ici
 
+draw_sprite_ext(
+		s_bsod,
+		0,
+		room_width/2,
+		room_height/2,
+		room_width/sprite_get_width(s_bsod),
+		room_height/sprite_get_height(s_bsod),
+		0,
+		c_white,
+		.5
+	);
+
 draw_set_font(f_courierstrong);
 
 draw_set_halign(fa_left);

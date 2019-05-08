@@ -11,7 +11,7 @@ if (global.debugmode) {
 	draw_text(5,125,"App surface : " + string(surface_get_width(application_surface)) + " * " + string(surface_get_height(application_surface))) ;
 	draw_text(5,155,"Room Size : " + string(room_width) + " * " + string(room_height)) ;
 	draw_text(5,185,"FPS : " + string(fps)) ;
-	draw_text(5,245,"Mouse : " + string(o_eyemanager.mousex)) ;
+	if (instance_exists(o_eyemanager)) draw_text(5,245,"Mouse : " + string(o_eyemanager.mousex)) ;
 	draw_text(5,275,"Real Mouse : " + string(mouse_x)) ;
 }
 

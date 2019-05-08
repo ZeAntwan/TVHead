@@ -1,2 +1,2 @@
 global.soundstop = true;
-global.bgindex = 0;
+//global.bgindex = 0;

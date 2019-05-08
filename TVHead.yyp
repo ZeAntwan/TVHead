@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "05ff5072-8e8e-41f1-a329-aa31a093d0b4",
-            "Value": {
-                "id": "fb049a24-b045-4e22-8f13-ee1bba324992",
-                "resourcePath": "sprites\\bg_test\\bg_test.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "08aab554-144c-41bb-8d64-bca66710121e",
             "Value": {
                 "id": "9c49b83c-180d-450c-afa4-2fe3a03b4d82",
@@ -391,14 +383,6 @@
             }
         },
         {
-            "Key": "51c9e59e-c55d-4b7b-b694-6be3e1730c67",
-            "Value": {
-                "id": "bad26572-f9db-430c-b296-b2410211fc84",
-                "resourcePath": "sprites\\bg_main\\bg_main.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "56312a12-0159-4d8c-93ab-0bd877366e4b",
             "Value": {
                 "id": "db10f020-649e-419e-99db-5ee152759f0b",
@@ -716,6 +700,14 @@
                 "id": "2dfd000a-abc2-44a6-832c-4325c2d6f0c7",
                 "resourcePath": "notes\\LICENSE_audioviz2.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "92368b96-fb0a-4919-bf42-f97383b55bfd",
+            "Value": {
+                "id": "f1e3762f-5405-4ad6-b40a-44b6f50f727b",
+                "resourcePath": "sprites\\bg_wegs\\bg_wegs.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1143,6 +1135,14 @@
             }
         },
         {
+            "Key": "d69e0e83-2232-49f5-b7ce-936efbd4d2bb",
+            "Value": {
+                "id": "0fc009a8-4372-4fba-8d73-d4a1795ce2fe",
+                "resourcePath": "sprites\\bg_textilized\\bg_textilized.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d6c4e399-478a-4361-8a3c-a8bef6e61305",
             "Value": {
                 "id": "6a85788d-7d0e-442a-a21d-8471d5bdee33",
@@ -1260,14 +1260,6 @@
                 "id": "5c0ce83f-0cad-4e61-acb9-7bef8cdfe349",
                 "resourcePath": "sounds\\sfx_error\\sfx_error.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "ef8ddc90-e635-48ea-aada-d742671503b9",
-            "Value": {
-                "id": "c6659462-8c16-46b4-b3f1-0e976f8d7b1e",
-                "resourcePath": "views\\ef8ddc90-e635-48ea-aada-d742671503b9.yy",
-                "resourceType": "GMFolder"
             }
         },
         {

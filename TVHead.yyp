@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "030677c2-0aeb-4ee7-bc13-972e6e4cebb3",
+            "Value": {
+                "id": "97e2e302-6c1b-49ef-9745-ed584b8e8ac1",
+                "resourcePath": "sprites\\s_stuffco\\s_stuffco.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "046cf55a-2fda-4099-ad92-82e6d2179d21",
             "Value": {
                 "id": "f8c7d653-2e26-43ae-93a9-3dcd5fe56548",
@@ -452,6 +460,14 @@
                 "id": "21040678-b685-47e5-a185-1ccbdb7b9aa1",
                 "resourcePath": "extensions\\audioviz2\\audioviz2.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "6c44c9e9-3409-43ba-9b8f-3882d10ebf40",
+            "Value": {
+                "id": "a75547c2-765d-4d18-8e33-f276ce122305",
+                "resourcePath": "views\\6c44c9e9-3409-43ba-9b8f-3882d10ebf40.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -892,6 +908,14 @@
                 "id": "13ef0695-f8af-406e-a41b-303985b9fb28",
                 "resourcePath": "fonts\\font_console\\font_console.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "b59e0a5f-b338-4b3c-9508-0cca5b90d8fe",
+            "Value": {
+                "id": "2f439a97-9f9c-44e2-95f9-2cf90474e72f",
+                "resourcePath": "rooms\\rm_stuffco\\rm_stuffco.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

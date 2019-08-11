@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "4cb00c26-7c9a-4464-86d4-c0a93deccd31",
+            "Value": {
+                "id": "56adf4d2-2b38-4ac7-8a45-e4b6c2713a01",
+                "resourcePath": "sprites\\bg_mire\\bg_mire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d73a530-fa8a-4378-9d93-8196487af926",
             "Value": {
                 "id": "6c53156f-4b9f-4ba8-b60c-3a534db0537d",

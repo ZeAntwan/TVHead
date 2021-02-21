@@ -1,0 +1,6 @@
+function scr_fullscreen() {
+
+
+
+
+}
